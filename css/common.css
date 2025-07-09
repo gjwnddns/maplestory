@@ -1,0 +1,65 @@
+/* 전체 사이트 공통 스타일 */
+@font-face {
+    font-family: "NEXON Lv1 Gothic";
+    src: url("../font/NEXON_Lv1_Gothic/NEXON Lv1 Gothic_OTF_TTF/TTF/NEXONLv1GothicRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic";
+    src: url("../font/NEXON_Lv1_Gothic/NEXON Lv1 Gothic_OTF_TTF/TTF/NEXONLv1GothicBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv1 Gothic";
+    src: url("../font/NEXON_Lv1_Gothic/NEXON Lv1 Gothic_OTF_TTF/TTF/NEXONLv1GothicLight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    src: url("../font/NEXON_Lv2_Gothic/TTF/NEXON Lv2 Gothic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    src: url("../font/NEXON_Lv2_Gothic/TTF/NEXON Lv2 Gothic Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    src: url("../font/NEXON_Lv2_Gothic/TTF/NEXON Lv2 Gothic Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "NEXON Lv2 Gothic";
+    src: url("../font/NEXON_Lv2_Gothic/TTF/NEXON Lv2 Gothic Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: "NEXON Lv1 Gothic", "Malgun Gothic", sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+a { color: inherit; }

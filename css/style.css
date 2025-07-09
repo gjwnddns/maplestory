@@ -1,0 +1,201 @@
+/* 헤더 */
+header {
+    position: relative;
+    z-index: 9999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 360px;
+    height: 63px;
+    font-family:
+        "NEXON Lv1 Gothic",
+        "Malgun Gothic", sans-serif;
+    font-size: 12px;
+    line-height: 1;
+    color: #737881;
+    background-color: #fff;
+    border-bottom: 1px solid #dde1e5;
+}
+
+header a:hover { color: #07f; }
+
+/* 헤더 - 메뉴 */
+.header__menu {
+    display: block;
+    padding-left: 23px;
+    font-family:
+        "NEXON Lv1 Gothic",
+        "Malgun Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #17191d;
+    transition: all 0.15s linear;
+}
+.header__menu:hover .menu-btn { background-color: #07f; }
+.menu-btn {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin: 1px 11px 0 0;
+    background: #17191d url(https://rs.nxfs.nexon.com/gnb/images/set_gnb.png) 0 0 no-repeat;
+    transition: all 0.15s linear;
+    zoom: 1;
+}
+.menu-text {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
+    letter-spacing: normal;
+}
+
+/* 헤더 - 유저 */
+.header__user {
+    display: flex;
+    height: 62px;
+    padding-right: 11px;
+    margin: 0;
+    text-align: right;
+    vertical-align: top;
+    font: inherit;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+.header__user a {
+    margin-right: 8px;
+    font-family:
+        "NEXON Lv1 Gothic",
+        "Malgun Gothic", sans-serif;
+    font-size: 14px;
+    color: #17191d;
+    box-sizing: border-box;
+}
+.user-card {
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 62px;
+    padding: 21px 5px 0 6px;
+}
+.user-card:hover .user-card-icon { background-color: #07f; }
+.user-card-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #191919 url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat;
+    transition: all 0.15s linear;
+    zoom: 1;
+}
+.user-card-text {
+    position: absolute;
+    top: 43px;
+    left: -22px;
+    width: 78px;
+    height: 18px;
+    padding: 1px 6px 0;
+    font-family: malgun gothic;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -.28px;
+    color: hsla(0, 0%, 100%, .9);
+    text-align: center;
+    background-color: #1b1f24;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s linear;
+}
+.user-card:hover .user-card-text {
+    visibility: visible;
+    opacity: 1;
+}
+.user-card-badge {
+    position: absolute;
+    top: 19px;
+    left: 18px;
+    display: block;
+    min-width: 14px;
+    height: 14px;
+    padding: 0 3px 0 4px;
+    font: 10px malgun gothic;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #07f;
+    border-radius: 7px;
+}
+.user-pcbang {
+    position: relative;
+    z-index: 10;
+    display: block;
+    height: 62px;
+    padding: 21px 5px 0 6px;
+}
+.user-pcbang-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg) 0 0 no-repeat;
+    transition: all 0.15s linear;
+    zoom: 1;
+}
+.user-pcbang:hover .user-pcbang-icon { background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg) 0 0 no-repeat; }
+.user-pcbang-text {
+    position: absolute;
+    top: 43px;
+    left: -22px;
+    width: 78px;
+    height: 18px;
+    padding: 1px 6px 0;
+    font-family: malgun gothic;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -.28px;
+    color: hsla(0, 0%, 100%, 0.9);
+    text-align: center;
+    background-color: #1b1f24;
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.user-pcbang:hover .user-pcbang-text {
+    visibility: visible;
+    opacity: 1;
+}
+.user-join {
+    display: block;
+    height: 62px;
+    padding: 24px 3px 0;
+    font: 14px NEXON Gothic;
+    color: #17191d;
+}
+.user-join:hover {
+    color: #07f;
+}
+.user-login {
+    display: inline-block;
+    min-width: 85px;
+    height: 36px;
+    padding: 7px 18px 0;
+    margin: 13px 9px 0 0;
+    font: 15px NEXON Gothic Bold;
+    color: #080410;
+    text-align: center;
+    border: 2px solid #17191d;
+    border-radius: 19px;
+    zoom: 1;
+}
+.user-login:hover {
+    color: #fff;
+    background-color: #07f;
+    border-color: #07f;
+}
