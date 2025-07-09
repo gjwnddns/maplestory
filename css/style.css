@@ -20,10 +20,14 @@ header {
 
 header a:hover { color: #07f; }
 
-/* 헤더 - 메뉴 */
+/* 헤더 - 메뉴 컨테이너 */
 .header__menu {
-    display: block;
     padding-left: 23px;
+}
+
+/* 메뉴 토글 Block */
+.menu-toggle {
+    display: block;
     font-family:
         "NEXON Lv1 Gothic",
         "Malgun Gothic", sans-serif;
@@ -32,8 +36,8 @@ header a:hover { color: #07f; }
     color: #17191d;
     transition: all 0.15s linear;
 }
-.header__menu:hover .menu-btn { background-color: #07f; }
-.menu-btn {
+.menu-toggle:hover .menu-toggle__btn { background-color: #07f; }
+.menu-toggle__btn {
     display: inline-block;
     width: 18px;
     height: 16px;
@@ -42,7 +46,7 @@ header a:hover { color: #07f; }
     transition: all 0.15s linear;
     zoom: 1;
 }
-.menu-text {
+.menu-toggle__text {
     margin: 0;
     padding: 0;
     border: 0;
@@ -69,7 +73,11 @@ header a:hover { color: #07f; }
     border-radius: 0;
     box-sizing: border-box;
 }
-.header__user a {
+.user {
+    display: flex;
+    align-items: center;
+}
+.user a {
     margin-right: 8px;
     font-family:
         "NEXON Lv1 Gothic",
@@ -78,15 +86,15 @@ header a:hover { color: #07f; }
     color: #17191d;
     box-sizing: border-box;
 }
-.user-card {
+.user__card {
     position: relative;
     z-index: 10;
     display: block;
     height: 62px;
     padding: 21px 5px 0 6px;
 }
-.user-card:hover .user-card-icon { background-color: #07f; }
-.user-card-icon {
+.user__card:hover .user__card-icon { background-color: #07f; }
+.user__card-icon {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -94,7 +102,7 @@ header a:hover { color: #07f; }
     transition: all 0.15s linear;
     zoom: 1;
 }
-.user-card-text {
+.user__card-text {
     position: absolute;
     top: 43px;
     left: -22px;
@@ -113,11 +121,11 @@ header a:hover { color: #07f; }
     opacity: 0;
     transition: all .2s linear;
 }
-.user-card:hover .user-card-text {
+.user__card:hover .user__card-text {
     visibility: visible;
     opacity: 1;
 }
-.user-card-badge {
+.user__card-badge {
     position: absolute;
     top: 19px;
     left: 18px;
@@ -132,14 +140,14 @@ header a:hover { color: #07f; }
     background-color: #07f;
     border-radius: 7px;
 }
-.user-pcbang {
+.user__pcbang {
     position: relative;
     z-index: 10;
     display: block;
     height: 62px;
     padding: 21px 5px 0 6px;
 }
-.user-pcbang-icon {
+.user__pcbang-icon {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -147,8 +155,8 @@ header a:hover { color: #07f; }
     transition: all 0.15s linear;
     zoom: 1;
 }
-.user-pcbang:hover .user-pcbang-icon { background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg) 0 0 no-repeat; }
-.user-pcbang-text {
+.user__pcbang:hover .user__pcbang-icon { background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg) 0 0 no-repeat; }
+.user__pcbang-text {
     position: absolute;
     top: 43px;
     left: -22px;
@@ -167,26 +175,24 @@ header a:hover { color: #07f; }
     opacity: 0;
     transition: all 0.2s linear;
 }
-.user-pcbang:hover .user-pcbang-text {
+.user__pcbang:hover .user__pcbang-text {
     visibility: visible;
     opacity: 1;
 }
-.user-join {
+.user__join {
     display: block;
     height: 62px;
     padding: 24px 3px 0;
     font: 14px NEXON Gothic;
     color: #17191d;
 }
-.user-join:hover {
+.user__join:hover {
     color: #07f;
 }
-.user-login {
-    display: inline-block;
+.user__login {
     min-width: 85px;
     height: 36px;
     padding: 7px 18px 0;
-    margin: 13px 9px 0 0;
     font: 15px NEXON Gothic Bold;
     color: #080410;
     text-align: center;
@@ -194,8 +200,60 @@ header a:hover { color: #07f; }
     border-radius: 19px;
     zoom: 1;
 }
-.user-login:hover {
+.user__login:hover {
     color: #fff;
     background-color: #07f;
     border-color: #07f;
+}
+
+/* main */
+main {
+    min-width: 1280px;
+    position: relative;
+}
+
+/* 메인 네비게이션 */
+nav {
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 메인 네비게이션 - 다크모드 */
+.darkmode-group {
+    display: flex;
+    background-color: var(--darkOnOffBg);
+    height: 28px;
+    padding: 0 3px;
+    align-items: center;
+    border-radius: 14px;
+    transition: background var(--gnbAnimSpeed) ease;
+    cursor: pointer;
+}
+
+.darkmode-group__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.darkmode-group__btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.darkmode-group__btn--active {
+    background-color: var(--darkOnOffActive, #fff);
+}
+
+.darkmode-group__btn--active:hover {
+    background-color: var(--darkOnOffActive, #fff);
 }

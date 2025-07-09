@@ -11,33 +11,68 @@
 
     <body>
         <header>
-            <a class="header__menu" href="#">
-                <span class="menu-btn"></span>
-                <span class="menu-text">메뉴</span>
-            </a>
+            <div class="header__menu">
+                <a class="menu-toggle" href="#">
+                    <span class="menu-toggle__btn"></span>
+                    <span class="menu-toggle__text">메뉴</span>
+                </a>
+            </div>
             <img
                 class="header__logo"
                 src="https://rs.nxfs.nexon.com/gnb/images/logo_nexon.png"
                 alt="NEXON"
             />
             <div class="header__user">
-                <a class="user-card" href="#">
-                    <span class="user-card-icon"></span>
-                    <span class="user-card-text">넥슨현대카드</span>
-                    <span class="user-card-badge">N</span>
-                </a>
-                <a class="user-pcbang" href="#">
-                    <span class="user-pcbang-icon"></span>
-                    <span class="user-pcbang-text">PC방 찾기</span>
-                </a>
-                <a class="user-join" href="#">
-                    넥슨 회원가입
-                </a>
-                <a class="user-login" href="#">넥슨 로그인</a>
+                <div class="user">
+                    <a class="user__card" href="#">
+                        <span class="user__card-icon"></span>
+                        <span class="user__card-text">넥슨현대카드</span>
+                        <span class="user__card-badge">N</span>
+                    </a>
+                    <a class="user__pcbang" href="#">
+                        <span class="user__pcbang-icon"></span>
+                        <span class="user__pcbang-text">PC방 찾기</span>
+                    </a>
+                    <a class="user__join" href="#">
+                        넥슨 회원가입
+                    </a>
+                    <a class="user__login" href="#">넥슨 로그인</a>
+                </div>
             </div>
         </header>
 
-        <main></main>
+        <main>
+            <nav>
+                <h1 class="gnb__logo">
+                    <a href="https://maplestory.nexon.com/Home/Main">
+                        <img src="img/maplestory-logo.svg" alt="메이플스토리">
+                    </a>
+                </h1>
+                <div class="gnb__group"></div>
+                <div class="gnb__darkmode">
+                    <div class="darkmode-group">
+                        <button type="button" class="darkmode-group__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="#BBBECD">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0001 8.31243C11.2125 8.6682 10.3384 8.86623 9.41797 8.86623C5.95037 8.86623 3.13932 6.05535 3.13932 2.58796C3.13932 1.66472 3.33862 0.788019 3.69653 -0.00146484C1.51684 0.983143 0 3.17595 0 5.723C0 9.1904 2.81105 12.0013 6.27865 12.0013C8.82295 12.0013 11.0138 10.488 12.0001 8.31243Z" fill="inherit"></path>
+                            </svg>
+                        </button>
+                        <button type="button" class="darkmode-group__btn darkmode-group__btn--active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="#BBBECD">
+                                <path d="M5.33333 0.666667C5.33333 0.298477 5.63181 0 6 0C6.36819 0 6.66667 0.298477 6.66667 0.666667V1.33333C6.66667 1.70152 6.36819 2 6 2C5.63181 2 5.33333 1.70152 5.33333 1.33333V0.666667Z" fill="inherit"></path>
+                                <path d="M5.33333 10.6667C5.33333 10.2985 5.63181 10 6 10C6.36819 10 6.66667 10.2985 6.66667 10.6667V11.3333C6.66667 11.7015 6.36819 12 6 12C5.63181 12 5.33333 11.7015 5.33333 11.3333V10.6667Z" fill="inherit"></path>
+                                <path d="M11.3333 5.33333C11.7015 5.33333 12 5.63181 12 6C12 6.36819 11.7015 6.66667 11.3333 6.66667H10.6667C10.2985 6.66667 10 6.36819 10 6C10 5.63181 10.2985 5.33333 10.6667 5.33333H11.3333Z" fill="inherit"></path>
+                                <path d="M1.33333 5.33333C1.70152 5.33333 2 5.63181 2 6C2 6.36819 1.70152 6.66667 1.33333 6.66667H0.666667C0.298477 6.66667 -1.60941e-08 6.36819 0 6C1.60941e-08 5.63181 0.298477 5.33333 0.666667 5.33333H1.33333Z" fill="inherit"></path>
+                                <path d="M2.70017 10.2426C2.43982 10.503 2.01771 10.503 1.75736 10.2426C1.49701 9.98229 1.49701 9.56018 1.75736 9.29983L2.22877 8.82843C2.48911 8.56808 2.91122 8.56808 3.17157 8.82843C3.43192 9.08878 3.43192 9.51089 3.17157 9.77124L2.70017 10.2426Z" fill="inherit"></path>
+                                <path d="M9.77124 3.17157C9.51089 3.43192 9.08878 3.43192 8.82843 3.17157C8.56808 2.91122 8.56808 2.48911 8.82843 2.22876L9.29983 1.75736C9.56018 1.49701 9.98229 1.49701 10.2426 1.75736C10.503 2.01771 10.503 2.43982 10.2426 2.70017L9.77124 3.17157Z" fill="inherit"></path>
+                                <path d="M1.75801 2.70017C1.49766 2.43982 1.49766 2.01771 1.75801 1.75736C2.01836 1.49701 2.44047 1.49701 2.70082 1.75736L3.17222 2.22876C3.43257 2.48911 3.43257 2.91122 3.17222 3.17157C2.91187 3.43192 2.48976 3.43192 2.22941 3.17157L1.75801 2.70017Z" fill="inherit"></path>
+                                <path d="M8.82908 9.77124C8.56873 9.51089 8.56873 9.08878 8.82908 8.82843C9.08943 8.56808 9.51154 8.56808 9.77189 8.82843L10.2433 9.29983C10.5036 9.56018 10.5036 9.98229 10.2433 10.2426C9.98294 10.503 9.56083 10.503 9.30048 10.2426L8.82908 9.77124Z" fill="inherit"></path>
+                                <path d="M9 6C9 7.65685 7.65685 9 6 9C4.34315 9 3 7.65685 3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6Z" fill="inherit"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </main>
 
         <footer></footer>
         <script src="js/script.js"></script>
