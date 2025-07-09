@@ -1,4 +1,27 @@
 /* 전체 사이트 공통 스타일 */
+:root {
+    --gnbHeight: 86px;
+    --gnbAnimSpeed: .3s;
+    --gnbFixedTopBg: #525572;
+    --gnbFixedBg: rgba(70, 73, 95, .98);
+    --darkOnOffBg: #E9EAF0;
+    --btnLight: #71748C;
+    --btnDark: transparent;
+    --gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
+}
+
+html.dark:root {
+    --gnbColor: #F7F7F7;
+    --darkOnOffBg: #252629;
+    --btnLight: transparent;
+    --btnDark: #E9EAF0;
+    --footerSelectText: #FDFDFF;
+    --footerSelectBg: #46474E;
+    --footerBolder: rgba(184, 187, 218, 0.30);
+    --footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo.png);
+    --footerSnsColor: #C6C6C6;
+}
+
 @font-face {
     font-family: "NEXON Lv1 Gothic";
     src: url("../font/NEXON_Lv1_Gothic/NEXON Lv1 Gothic_OTF_TTF/TTF/NEXONLv1GothicRegular.ttf") format("truetype");

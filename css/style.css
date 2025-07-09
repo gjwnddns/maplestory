@@ -222,6 +222,15 @@ nav {
 }
 
 /* 메인 네비게이션 - 다크모드 */
+.gnb__darkmode {
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    max-height: var(--gnbHeight);
+    gap: 0px;
+}
+
 .darkmode-group {
     display: flex;
     background-color: var(--darkOnOffBg);
