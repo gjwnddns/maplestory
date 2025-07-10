@@ -1,27 +1,79 @@
 /* 전체 사이트 공통 스타일 */
 :root {
-    --gnbHeight: 86px;
-    --gnbAnimSpeed: .3s;
-    --gnbFixedTopBg: #525572;
-    --gnbFixedBg: rgba(70, 73, 95, .98);
-    --darkOnOffBg: #E9EAF0;
-    --btnLight: #71748C;
-    --btnDark: transparent;
-    --gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
+	--gnbHeight: 86px;
+	--gnbFixedTopBg : #525572;
+	--darkOnOffBg : #E9EAF0;
+	--btnLight : #71748C;
+	--gnbAnimSpeed: .3s;
+	--gnbFixedBg : rgba(70, 73, 95, .98);
+	--transition-speed3s: .3s;
+	--transition-speed: .4s;
+	--titleColor: #454757;
+	--textColor: #3D3F4C;
+	--bgMainColor: #FFF;
+	--bgSubColor: #EFF0F5;
+	--btnCommonT3TextColor: #6D707F;
+	--btnCommonT3BgColor: #fff;
+	--btnCommonT3TextColor2: #6D707F;
+
+	--otherSectionColor: #EFF0F5;
+	--mainBannerRound: url('https://lwi.nexon.com/maplestory/home/banner_round.png');
+
+	--noticelistLine: rgba(222, 225, 243, .6);
+	--listLine: #DEE1F3;
+	--personalBannerBg: url('https://lwi.nexon.com/maplestory/home/banner_footRound.png');
+	/* --moreBtnImage: url('https://lwi.nexon.com/maplestory/home/btn_more_mainCommon.svg'); */
+	--moreBtnImage: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23969ABB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A");
+	--moreBtnImageOver: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%2346495F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A");
+
+	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png');
+	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png');
+
+    --moreBtnImage: url(data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23969ABB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A);
+	--noticeListColorType_1 : #3B83E1;
+	--noticeListColorType_2 : #2F9461;
+	--noticeListColorType_4 : #E07948;
+	--noticeListColorType_5 : #5564A1;
+	--noticeListColorType_6 : #D64ADD;
+    --swiper-theme-color: #007aff;
 }
 
 html.dark:root {
-    --gnbColor: #F7F7F7;
-    --darkOnOffBg: #252629;
-    --btnLight: transparent;
-    --btnDark: #E9EAF0;
-    --footerSelectText: #FDFDFF;
-    --footerSelectBg: #46474E;
-    --footerBolder: rgba(184, 187, 218, 0.30);
-    --footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo.png);
-    --footerSnsColor: #C6C6C6;
-}
+	--gnbColor: #F7F7F7;
+	/* --gnbFixedBg : #32333B; */
+	--darkOnOffBg : #252629;
+	--btnLight : transparent;
+	--btnDark : #E9EAF0;
+	--footerSelectText : #FDFDFF;
+	--footerSelectBg : #46474E;
+	--footerBolder : rgba(184, 187, 218, 0.30);
+	--footerLogo : url('https://lwi.nexon.com/maplestory/common/footer_logo.png');
+	--footerSnsColor : #C6C6C6;
+	--gnbHeight: 86px;
+	--titleColor: #F0F2FF;
+	--textColor: #FDFDFF;
+	--bgMainColor: #46474E;
+	--bgSubColor: #52535E;
+	--btnCommonT3TextColor: #FDFDFF;
+	--btnCommonT3BgColor: #46474E;
+	--btnCommonT3TextColor2: #C0C4E0;
 
+	--otherSectionColor: #52535E;
+	--mainBannerRound: url('https://lwi.nexon.com/maplestory/home/banner_round_br.png');
+
+	--noticelistLine: rgba(98, 99, 106, .6);
+	--listLine: #62636A;
+	--personalBannerBg: url('https://lwi.nexon.com/maplestory/home/banner_footRound_br.png');
+
+	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br.png');
+	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br_on.png');
+
+	--noticeListColorType_1 : #A6EDFF;
+	--noticeListColorType_2 : #89E7B8;
+	--noticeListColorType_4 : #FFA467;
+	--noticeListColorType_5 : #ABBCFF;
+	--noticeListColorType_6 : #FA8FFF;
+}
 @font-face {
     font-family: "NEXON Lv1 Gothic";
     src: url("../font/NEXON_Lv1_Gothic/NEXON Lv1 Gothic_OTF_TTF/TTF/NEXONLv1GothicRegular.ttf") format("truetype");
@@ -79,10 +131,44 @@ html.dark:root {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
 body {
     font-family: "NEXON Lv1 Gothic", "Malgun Gothic", sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: var(--bgMainColor);
+}
+
+div {
+    display: block;
 }
 
 a { color: inherit; }
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    vertical-align: top;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
