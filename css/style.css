@@ -1,0 +1,216 @@
+/* 속성 선언 순서 */
+/*
+{
+Positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+Box-model
+    display: block;
+    float: right;
+    flex: 1;
+    width: 100px;
+    height: 100px;
+Typography
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+Background
+    background-color: #f5f5f5;
+Border
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+etc
+    opacity: 1;
+}
+*/
+
+header {
+    position: relative;
+    z-index: 9999999;
+    display: flex;
+    height: var(--header-height);
+    justify-content: space-between;
+    align-items: center;
+    font: 12px malgun gothic, "sans serif";
+    line-height: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #dde1e5;
+}
+
+/* 공통 아이콘 스타일 */
+.menu-icon,
+.user-menu-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    zoom: 1;
+    transition: all .15s linear;
+}
+header a {
+    text-decoration: none;
+    transition: all .15s linear;
+}
+/* 공통 아이콘 hover 스타일 */
+.menu-icon--hovered,
+.user-menu-icon--hovered { transition: all .2s linear; }
+
+header a .menu-icon,
+header a .user-menu-icon { transition: all .15s linear; }
+
+/* Block : 메뉴 토글 */
+.menu-toggle .menu-toggle__btn{
+    display: flex;
+    padding: 2px 0px 0 23px;
+    font: 16px NEXON Gothic;
+    color: #17191d;
+    text-decoration: none;
+    border-radius: 0;
+    transition: all .15s linear;
+}
+.menu-toggle .menu-toggle__btn--hovered { color: #07f; }
+.menu-toggle .menu-toggle__btn .menu-icon {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin: 1px 11px 0 0;
+    zoom: 1;
+    background: transparent url(https://rs.nxfs.nexon.com/gnb/images/set_gnb.png) 0 0 no-repeat;
+    background-color: #17191d;
+    transition: all .15s linear;
+}
+.menu-toggle .menu-toggle__btn--hovered .menu-icon {
+    background-color: #07f;
+    transition: all .2s linear;
+}
+.menu-toggle .menu-toggle__btn .text {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font : inherit;
+    letter-spacing: normal;
+    border: 0;
+    border-radius: 0;
+    -webkit-text-size-adjust: none;
+    touch-action: manipulation;
+}
+
+/* Block : 넥슨 로고 */
+.nexon-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* Block : 유저 인증 관련, 결제, pc방 서비스 리스트 */
+.user-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    padding-right: 11px;
+    gap: 8px;
+    list-style: none;
+}
+.user-menu__item { padding-top: 2px; }
+
+/* Blocks : 넥슨 현대카드, 넥슨 피시방 찾기, 회원가입, 로그인 */
+.nexon-hyundai-card,
+.search-pcbang,
+.join,
+.login {
+    position: relative;
+    z-index: 10;
+    display: block;
+    font: 14px NEXON Gothic;
+    color: #17191d;
+}
+.hidden-name {
+    position: absolute;
+    top: 22px;
+    left: -29px;
+    width: 78px;
+    height: 18px;
+    padding: 1px 6px 0px;
+    visibility: hidden;
+    box-sizing: border-box;
+    font-family: "malgun gothic";
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.28px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    background-color: rgb(27, 31, 36);
+    border-radius: 15px;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+.hidden-name--hovered {
+    visibility: visible;
+    opacity: 1;
+}
+.user-menu-icon { width: 22px; height: 22px; }
+
+/* Block : 넥슨 현대카드 */
+.nexon-hyundai-card { margin: 3px 5px 0 6px; }
+.nexon-hyundai-card .user-menu-icon { background: #191919 url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat; }
+.nexon-hyundai-card--hovered .user-menu-icon { background-color: #07f; }
+.nexon-hyundai-card .badge {
+    position: absolute;
+    top: -2px;
+    left: 12px;
+    display: block;
+    min-width: 14px;
+    height: 14px;
+    padding: 0 3px 0 4px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    font: 10px malgun gothic;
+    color: #fff;
+    text-align: center;
+    background-color: #07f;
+    border-radius: 7px;
+}
+
+/* Block : 넥슨 피시방 찾기 */
+.search-pcbang { margin: 3px 5px 0 6px; }
+.search-pcbang .user-menu-icon { background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg) 0 0 no-repeat; }
+.search-pcbang--hovered .user-menu-icon {
+    background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg) 0 0 no-repeat;
+    transition: all .2s linear;
+}
+
+/* Block : 넥슨 회원가입 */
+.join .name {
+    margin: 0 3px 0;
+    transition: all .15s linear;
+}
+.join--hovered .name { color: #07f; }
+
+/* Block : 넥슨 로그인 */
+.login { margin: -3px 8px 0 0; }
+.login .name {
+    min-width: 85px;
+    height: 36px;
+    margin-right: 9px;
+    padding: 7px 18px;
+    font: 15px NEXON Gothic Bold;
+    color: #080410;
+    text-align: center;
+    border: 2px solid #17191d;
+    border-radius: 19px;
+    transition: all .15s linear;
+}
+.login--hovered .name {
+    color: #fff;
+    background-color: #07f;
+    border-color: #07f;
+}

@@ -36,6 +36,9 @@
 	--noticeListColorType_5 : #5564A1;
 	--noticeListColorType_6 : #D64ADD;
     --swiper-theme-color: #007aff;
+
+    /* 허중운 커스텀 상수*/
+    --header-height: 62px;
 }
 
 html.dark:root {
@@ -73,6 +76,20 @@ html.dark:root {
 	--noticeListColorType_4 : #FFA467;
 	--noticeListColorType_5 : #ABBCFF;
 	--noticeListColorType_6 : #FA8FFF;
+}
+
+@font-face {
+    font-family: NEXON Gothic;
+    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot);
+    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.woff) format("woff");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: NEXON Gothic Bold;
+    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot);
+    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.woff) format("woff");
+    font-weight: 400
 }
 
 * {
