@@ -76,3 +76,18 @@ if (menuToggleBtn) {
         }
     });
 }
+
+// 페이지 스크롤시 main-nav가 sticky 시,
+// main-nav--sticky 클래스 추가
+const mainNav = document.querySelector('.main-nav');
+const navHeight = mainNav.offsetHeight;
+
+if (mainNav) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > navHeight) {
+            mainNav.classList.add('main-nav--sticky');
+        } else {
+            mainNav.classList.remove('main-nav--sticky');
+        }
+    });
+}

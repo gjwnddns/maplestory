@@ -39,6 +39,18 @@
 
     /* 허중운 커스텀 상수*/
     --header-height: 62px;
+    --main-max-width: 1696px;
+    --main-margin-x: 20px;
+}
+
+html.index:root {
+    --gnbColor: #222;
+    /* --gnbHeight: 86px; */
+    --footerSelectText: #3D3F4C;
+    --footerSelectBg: #FFF;
+    --footerBolder: rgba(72, 75, 101, 0.30);
+    --footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo_bl.png);
+    --footerSnsColor: #A9ABBD;
 }
 
 html.dark:root {
