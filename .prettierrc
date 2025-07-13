@@ -2,7 +2,7 @@
   "semi": true,
   "trailingComma": "es5",
   "singleQuote": true,
-  "printWidth": 80,
+  "printWidth": 120,
   "tabWidth": 4,
   "useTabs": false,
   "bracketSpacing": true,
@@ -16,6 +16,17 @@
   "requirePragma": false,
   "vueIndentScriptAndStyle": false,
   "embeddedLanguageFormatting": "auto",
-  "htmlWhitespaceSensitivity": "css",
-  "singleAttributePerLine": false
+  "htmlWhitespaceSensitivity": "strict",
+  "singleAttributePerLine": false,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html",
+        "printWidth": 120,
+        "htmlWhitespaceSensitivity": "strict",
+        "bracketSameLine": false
+      }
+    }
+  ]
 }
