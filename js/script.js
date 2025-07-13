@@ -91,3 +91,77 @@ if (mainNav) {
         }
     });
 }
+
+// main-nav hover 시,
+// main-nav--hovered 클래스 추가
+if (mainNav) {
+    mainNav.addEventListener('mouseenter', () => {
+        mainNav.classList.add('main-nav--hovered');
+    });
+
+    mainNav.addEventListener('mouseleave', () => {
+        mainNav.classList.remove('main-nav--hovered');
+    });
+}
+
+// categories__menu hover 시,
+// 해당 메뉴의 밑줄 애니메이션 활성화
+const categoryMenus = document.querySelectorAll('.categories__menu');
+
+categoryMenus.forEach(menu => {
+    menu.addEventListener('mouseenter', () => {
+        menu.classList.add('categories__menu--hovered');
+    });
+
+    menu.addEventListener('mouseleave', () => {
+        menu.classList.remove('categories__menu--hovered');
+    });
+});
+
+// 다크모드 버튼 hover 시,
+// 다크모드 버튼--hovered 클래스 추가
+const darkMode = document.querySelector('.dark-mode');
+
+darkMode.addEventListener('mouseenter', () => {
+    darkMode.classList.add('dark-mode--hovered');
+});
+
+darkMode.addEventListener('mouseleave', () => {
+    darkMode.classList.remove('dark-mode--hovered');
+});
+
+// 다크모드 버튼 클릭 시,
+// 다크모드 or 라이트 모드 활성화화
+const darkModeOn = document.getElementById('darkMode');
+const darkModeOff = document.getElementById('lightMode');
+const htmlElement = document.documentElement;
+
+// 로컬스토리지 여부 체크
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode === 'true') {
+    htmlElement.classList.add('dark');
+    darkModeOn.classList.add('dark-mode__on--active');
+    darkModeOff.classList.remove('dark-mode__off--active');
+} else {
+    htmlElement.classList.remove('dark');
+    darkModeOn.classList.remove('dark-mode__on--active');
+    darkModeOff.classList.add('dark-mode__off--active');
+}
+
+// 다크모드 기능 구현
+if (darkModeOn) {
+    darkModeOn.addEventListener('click', () => {
+        htmlElement.classList.add('dark');
+        darkModeOn.classList.add('dark-mode__on--active');
+        darkModeOff.classList.remove('dark-mode__off--active');
+        localStorage.setItem('darkMode', 'true');
+    });
+}
+if (darkModeOff) {
+    darkModeOff.addEventListener('click', () => {
+        htmlElement.classList.remove('dark');
+        darkModeOn.classList.remove('dark-mode__on--active');
+        darkModeOff.classList.add('dark-mode__off--active');
+        localStorage.setItem('darkMode', 'false');
+    });
+}

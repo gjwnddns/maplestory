@@ -36,6 +36,7 @@
 	--noticeListColorType_5 : #5564A1;
 	--noticeListColorType_6 : #D64ADD;
     --swiper-theme-color: #007aff;
+	--gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
 
     /* 허중운 커스텀 상수*/
     --header-height: 62px;
@@ -104,6 +105,14 @@ html.dark:root {
     font-weight: 400
 }
 
+@font-face {
+	font-family: 'PretendardVariable';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://lwi.nexon.com/fonts/PretendardVariable.woff2) format('woff2'),
+		url(https://lwi.nexon.com/fonts/PretendardVariable.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -117,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    display: block;
+    background-color: var(--bgMainColor);
 }
 
 div {
