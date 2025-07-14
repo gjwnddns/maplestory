@@ -695,23 +695,23 @@ main { position: relative; }
 }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 배너 네비게이션 */
-.banner__navigation {
+.swiper-navigation--banner {
     max-width: 1324px;
     left: 50%;
     transform: translateX(-50%);
     bottom: 40px;
     width: 100%;
 }
-.banner__navigation__outer {
+.swiper-navigation__outer--banner {
     display: flex;
     gap: 8px;
 }
-.banner__navigation__inner {
+.swiper-navigation__inner--banner {
     display: flex;
     align-items: center;
 }
-.banner__navigation__prev,
-.banner__navigation__next {
+.swiper-navigation__prev--banner,
+.swiper-navigation__next--banner {
     width: 26px;
     height: 26px;
     flex: 0 0 auto;
@@ -745,7 +745,6 @@ main { position: relative; }
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
-.banner__navigation__current { color: #222; }
 
 /* ========================================
    Event Modal
@@ -1292,31 +1291,31 @@ main { position: relative; }
 }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 게임 정보 네비게이션 */
-.board-box__navigation {
+.swiper-navigation--board {
     left: 30px;
     bottom: 25px;
     max-width: initial;
     width: auto;
     transform: translateX(0);
 }
-.board-box__navigation__prev {
+.swiper-navigation__prev--board {
     width: 20px;
     height: 20px;
     background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtnSm.png) no-repeat center center;
     position: relative;
 }
-.board-box__navigation__pagination {
+.swiper-navigation__pagination--board {
     height: 20px;
     font-size: 10px;
 }
-.board-box__navigation__next {
+.swiper-navigation__next--board {
     width: 20px;
     height: 20px;
     background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtnSm.png) no-repeat center center;
     position: relative;
 }
-.board-box__navigation__prev::after,
-.board-box__navigation__next::after {
+.swiper-navigation__prev--board::after,
+.swiper-navigation__next--board::after {
     content: '';
     display: block;
     width: 100%;
