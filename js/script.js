@@ -268,3 +268,16 @@ personalDefaultListItems.forEach(item => {
         item.classList.remove('personal-default__list__item-link--hovered');
     });
 });
+
+//youtube-link hover 시,
+//youtube-link--hovered 클래스 추가
+const youtubeLinks = document.querySelectorAll('.youtube-link');
+
+youtubeLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.classList.add('youtube-link--hovered');
+    });
+    link.addEventListener('mouseleave', () => {
+        link.classList.remove('youtube-link--hovered');
+    });
+});

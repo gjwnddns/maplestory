@@ -1328,3 +1328,85 @@ main { position: relative; }
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
+
+/* Block : 유튜브 */
+.youtube {
+    margin-top: 70px;
+    background-color: var(--otherSectionColor);
+}
+.youtube__inner {
+    padding: 28px 0 30px;
+}
+.youtube__thumb {
+    margin-top: 17px;
+}
+.youtube__thumb-list {
+    display: flex;
+    gap: 27px;
+}
+.youtube__thumb-item {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    max-width: 260px;
+}
+
+/* Block : 유튜브 썸네일 아이템 */
+.youtube-link__thumb {
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+.youtube-link__thumb::before {
+    content: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.632812' width='39' height='39' rx='9.5' fill='url(%23paint0_linear_1845_15401)'/%3E%3Crect x='0.5' y='0.632812' width='39' height='39' rx='9.5' stroke='%23E47A45'/%3E%3Cpath d='M29 18.4008C30.3333 19.1706 30.3333 21.0951 29 21.8649L17 28.7931C15.6667 29.5629 14 28.6006 14 27.061L14 13.2046C14 11.665 15.6667 10.7028 17 11.4726L29 18.4008Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1845_15401' x1='2.03046' y1='8.79948' x2='41.3437' y2='11.1686' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF7733'/%3E%3Cstop offset='1' stop-color='%23FF9364'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 10;
+    opacity: 0;
+    transition: all .4s cubic-bezier(0, 0.55, 0.45, 1);
+}
+.youtube-link--hovered .youtube-link__thumb::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.youtube-link__thumb > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s cubic-bezier(0, 0.55, 0.45, 1);
+}
+.youtube-link--hovered .youtube-link__thumb > img {
+    transform: scale(1.2);
+}
+.youtube-link__title {
+    text-align: center;
+    font-weight: 500;
+    color: var(--textColor);
+    padding-top: 14px;
+}
+.youtube-link__title > p {
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    height: 44px;
+}
+.youtube-link--new .youtube-link__title > p::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='5' fill='url(%23paint0_linear_261_1048)'/%3E%3Cpath d='M8 14H6V6H8L12 11V6H14V14H12L8 9V14Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_261_1048' x1='1.01523' y1='4.33333' x2='20.6719' y2='5.51789' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF7733'/%3E%3Cstop offset='1' stop-color='%23FF9364'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.youtube-link__title > p > span {
+    vertical-align: middle;
+    font-size: 16px;
+}
