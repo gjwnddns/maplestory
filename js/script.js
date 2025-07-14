@@ -192,6 +192,29 @@ loginBtn.addEventListener('mouseleave', () => {
     loginBtn.classList.remove('btn-login-nav-sticky__game-start--hovered');
 });
 
+//swiper-navigation__prev, next hover 시,
+//swiper-navigation__prev--hovered, swiper-navigation__next--hovered 클래스 추가
+const swiperNavigationPrev = document.querySelectorAll('.swiper-navigation__prev');
+const swiperNavigationNext = document.querySelectorAll('.swiper-navigation__next');
+
+swiperNavigationPrev.forEach(prev => {
+    prev.addEventListener('mouseenter', () => {
+        prev.classList.add('swiper-navigation__prev--hovered');
+    });
+    prev.addEventListener('mouseleave', () => {
+        prev.classList.remove('swiper-navigation__prev--hovered');
+    });
+});
+
+swiperNavigationNext.forEach(next => {
+    next.addEventListener('mouseenter', () => {
+        next.classList.add('swiper-navigation__next--hovered');
+    });
+    next.addEventListener('mouseleave', () => {
+        next.classList.remove('swiper-navigation__next--hovered');
+    });
+});
+
 //banner__navigation__event-more 클릭시,
 //event-modal--active 클래스 제거, 추가가
 const eventMore = document.querySelector('.banner__navigation__event-more');
@@ -227,5 +250,57 @@ eventItems.forEach(item => {
 
     item.addEventListener('mouseleave', () => {
         item.classList.remove('event-item--hovered');
+    });
+});
+
+//notice__title-icon hover 시,
+//notice__title-icon--hovered 클래스 추가
+const noticeTitleIcons = document.querySelectorAll('.notice__title-icon');
+
+noticeTitleIcons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+        icon.classList.add('notice__title-icon--hovered');
+    });
+    icon.addEventListener('mouseleave', () => {
+        icon.classList.remove('notice__title-icon--hovered');
+    });
+});
+
+//notice-info hover 시,
+//notice-info--hovered 클래스 추가
+const noticeInfos = document.querySelectorAll('.notice-info');
+
+noticeInfos.forEach(info => {
+    info.addEventListener('mouseenter', () => {
+        info.classList.add('notice-info--hovered');
+    });
+
+    info.addEventListener('mouseleave', () => {
+        info.classList.remove('notice-info--hovered');
+    });
+});
+
+//personal-default__login hover 시,
+//personal-default__login--hovered 클래스 추가
+const personalDefaultLogin = document.querySelector('.personal-default__login');
+
+personalDefaultLogin.addEventListener('mouseenter', () => {
+    personalDefaultLogin.classList.add('personal-default__login--hovered');
+});
+
+personalDefaultLogin.addEventListener('mouseleave', () => {
+    personalDefaultLogin.classList.remove('personal-default__login--hovered');
+});
+
+//personal-default__list__item-link hover 시,
+//personal-default__list__item-link--hovered 클래스 추가
+const personalDefaultListItems = document.querySelectorAll('.personal-default__list__item');
+
+personalDefaultListItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('personal-default__list__item-link--hovered');
+    });
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('personal-default__list__item-link--hovered');
     });
 });
