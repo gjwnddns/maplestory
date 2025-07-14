@@ -121,6 +121,14 @@ html.dark:root {
     text-decoration: none;
 }
 
+html {
+    width: 100%;
+	min-width: 1280px;
+	font-family: "PretendardVariable", "Malgun Gothic", sans-serif;
+	font-weight: 500;
+	color: var(--titleColor);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
