@@ -281,3 +281,17 @@ youtubeLinks.forEach(link => {
         link.classList.remove('youtube-link--hovered');
     });
 });
+
+//slide-item__img--store hover 시,
+//slide-item__img--store--hovered 클래스 추가
+const slideItemImgs = document.querySelectorAll('.slide-item__img--store');
+
+slideItemImgs.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+        img.classList.add('slide-item__img--store--hovered');
+    });
+    img.addEventListener('mouseleave', () => {
+        img.classList.remove('slide-item__img--store--hovered');
+    });
+});
+

@@ -599,8 +599,9 @@
                                                 <div class="update-info__text">
                                                     <p>ver.1.2.404 업데이트</p>
                                                 </div>
-                                                <div class="update-info__button">
-                                                    <a class="update-info__button-link update-info__button-link--detail" href="#">
+                                                <!-- Block : 공용 디테일 버튼 -->
+                                                <div class="common-detail-button common-detail-button--update">
+                                                    <a class="common-detail-button__link common-detail-button__link--type3" href="#">
                                                         자세히 보기
                                                     </a>
                                                 </div>
@@ -738,26 +739,148 @@
                     <div class="news__outer">
                         <div class="news__inner">
                              <div class="news__section">
-                                <!-- Block : 뉴스 섹션 -->
-                                <div class="news-section">
-                                    <h3 class="news-section__title">
+                                <!-- Block : 뉴스 container -->
+                                <div class="news-container">
+                                    <h3 class="news-container__title">
                                         메이플스토리 뉴스
                                     </h3>
                                     <!-- Block : 스와이퍼 기본 구조 + 뉴스 스와이퍼 -->
                                     <div class="swiper">
                                         <div class="swiper__wrapper">
-                                            <div class="swiper__slide">
+                                            <div class="swiper__slide swiper__slide--news">
                                                 <!-- Block : 뉴스 아이템 -->
                                                 <div class="slide-item__info slide-item__info--news">
-
+                                                    <div class="slide-item__left--news">
+                                                        <h4 class="slide-item__left-title--news">
+                                                            <span class="slide-item__left-title-text--news">버그악용&불법프로그램 신고</span>
+                                                        </h4>
+                                                        <p class="slide-item__left-content--news">
+                                                            버그나 불법 프로그램은 꼭! 신고해주세요! <br>
+                                                                제보의 심각성에 따라 보상을 지급해드립니다.
+                                                        </p>
+                                                        <!-- Block : 공용 디테일 버튼 + 뉴스전용 타입 4 -->
+                                                        <div class="common-detail-button common-detail-button--news">
+                                                            <a class="common-detail-button__link common-detail-button__link--type4" href="#">
+                                                                자세히 보기
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide-item__right--news">
+                                                        <img class="slide-item__right-img--news" src="https://jarvis.dn.nexoncdn.co.kr/maplestory/gb/20250602/20250602035416811-130ebf257d844f11b33158b91ec05d0d.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Block : 공용 스와이프 네비게이션 + 뉴스 스와이프 네비게이션 -->
+                                    <div class="swiper-navigation swiper-navigation--news">
+                                        <div class="swiper-navigation__outer">
+                                            <div class="swiper-navigation__inner">
+                                                <div class="swiper-navigation__prev swiper-navigation__prev--news">
+                                                    이전
+                                                </div>
+                                                <div class="swiper-navigation__pagination swiper-navigation__pagination--news">
+                                                    <div class="swiper-navigation__current swiper-navigation__current--news">
+                                                        1
+                                                    </div>
+                                                    /
+                                                    <div class="swiper-navigation__total swiper-navigation__total--news">
+                                                        1
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-navigation__next swiper-navigation__next--news">
+                                                    다음
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Block : 메이플 스토어 섹션 -->
-                                <div class="maple-store-section">
-
+                                <!-- Block : 메이플 스토어 -->
+                                <div class="maple-store">
+                                    <!-- Block : 공용 모듈 제목 -->
+                                    <div class="common-title">
+                                        <h4 class="common-title__text">MapleStore</h4>
+                                        <a class="common-title__icon" href="#"></a>
+                                    </div>
+                                    <div>
+                                        <div class="maple-store__banner">
+                                            <!-- Block : 스와이퍼 기본 구조 + 메이플 스토어 스와이퍼 -->
+                                            <div class="swiper">
+                                                <div class="swiper__wrapper">
+                                                    <div class="swiper__slide swiper__slide--store">
+                                                        <div class="slide-item__info--store">
+                                                            <a class="slide-item__link--store" href="#">
+                                                                <div class="slide-item__img-box--store">
+                                                                    <img class="slide-item__img--store" src="https://common.image.cf.marpple.co/files/u_4464390/2025/6/original/6fd3e15bc45e8dfe1db0d743af71438b495fbe491.png?q=92&amp;w=600&amp;f=jpeg&amp;bg=f6f6f6" alt="캐릭터 장패드 - 렌 (매화)">
+                                                                </div>
+                                                                <div class="slide-item__text-box--store">
+                                                                    <p class="slide-item__text--store"><span>캐릭터 장패드 - 렌 (매화)</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper__slide swiper__slide--store">
+                                                        <div class="slide-item__info--store">
+                                                            <a class="slide-item__link--store" href="#">
+                                                                <div class="slide-item__img-box--store">
+                                                                    <img class="slide-item__img--store" src="https://common.image.cf.marpple.co/files/u_4802706/2025/6/original/3e922ea06fc0313bfdc46ec160b223b026d5711a1.png?q=92&amp;w=450&amp;f=jpeg&amp;bg=f6f6f6" alt="캐릭터 아크릴 키링 - 렌">
+                                                                </div>
+                                                                <div class="slide-item__text-box--store">
+                                                                    <p class="slide-item__text--store"><span>캐릭터 아크릴 키링 - 렌</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide--store">
+                                                        <div class="slide-item__info--store">
+                                                            <a class="slide-item__link--store" href="#">
+                                                                <div class="slide-item__img-box--store">
+                                                                    <img class="slide-item__img--store" src="https://common.image.cf.marpple.co/files/u_4464390/2025/6/original/b6bc14ca78e1471feb0c7a98c873936a2ec5a0da1.png?q=92&amp;w=600&amp;f=jpeg&amp;bg=f6f6f6" alt="캐릭터 카드 스티커 - 렌 A타입 (S칩)">
+                                                                </div>
+                                                                <div class="slide-item__text-box--store">
+                                                                    <p class="slide-item__text--store"><span>캐릭터 카드 스티커 - 렌 A타입 (S칩)</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide--store">
+                                                        <div class="slide-item__info--store">
+                                                            <a class="slide-item__link--store" href="#">
+                                                                <div class="slide-item__img-box--store">
+                                                                    <img class="slide-item__img--store" src="https://common.image.cf.marpple.co/files/u_4464390/2025/6/original/6c50bd48ca538766b2c8119c9547f60f6ab2c0b61.png?q=92&amp;w=600&amp;f=jpeg&amp;bg=f6f6f6" alt="캐릭터 장패드 - 렌 (망혼)">
+                                                                </div>
+                                                                <div class="slide-item__text-box--store">
+                                                                    <p class="slide-item__text--store"><span>캐릭터 장패드 - 렌 (망혼)</span></p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                            <!-- Block : 네비게이션 기본 구조 + 스와이프 네비게이션 -->
+                                            <div class="swiper-navigation swiper-navigation--store">
+                                                <div class="swiper-navigation__outer">
+                                                    <div class="swiper-navigation__inner">
+                                                        <div class="swiper-navigation__prev swiper-navigation__prev--store">
+                                                            이전
+                                                        </div>
+                                                        <div class="swiper-navigation__pagination swiper-navigation__pagination--store">
+                                                            <div class="swiper-navigation__current swiper-navigation__current--store">
+                                                                1
+                                                            </div>
+                                                            /
+                                                            <div class="swiper-navigation__total swiper-navigation__total--store">
+                                                                4
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-navigation__next swiper-navigation__next--store">
+                                                            다음
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                              </div>
                              <!-- Block : 테스트 월드 -->

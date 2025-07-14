@@ -28,14 +28,13 @@
 	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png');
 	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png');
 
-    --moreBtnImage: url(data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23969ABB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A);
 	--noticeListColorType_1 : #3B83E1;
 	--noticeListColorType_2 : #2F9461;
 	--noticeListColorType_4 : #E07948;
 	--noticeListColorType_5 : #5564A1;
 	--noticeListColorType_6 : #D64ADD;
-    --swiper-theme-color: #007aff;
 	--gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
+    --swiper-theme-color: #007aff;
 
     /* 허중운 커스텀 상수*/
     --header-height: 62px;
@@ -143,11 +142,6 @@ body {
     background-color: var(--bgMainColor);
 }
 
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
 a { color: inherit; }
 
 button {
@@ -179,6 +173,7 @@ img {
     transition-property: transform;
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box;
+    transform: translate3d(0px, 0, 0);
 }
 .swiper__slide {
     overflow: hidden;
@@ -220,7 +215,7 @@ img {
     margin-top: 2px;
 }
 
-/* Block : 공용 스와이프프 네비게이션 */
+/* Block : 공용 스와이프 네비게이션 */
 .swiper-navigation {
     position: absolute;
     z-index: 10;
@@ -318,4 +313,77 @@ img {
 }
 .common-title__icon--hovered::after {
     opacity: 1;
+}
+
+/* Block : 공용 디테일 버튼 */
+.common-detail-button {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+.common-detail-button__link {
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-family: "PretendardVariable", "ë‹ì›€", sans-serif;
+    transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
+}
+/* 공용 디테일 버튼 타입 */
+.common-detail-button__link--type3 {
+    font-size: 13px;
+    display: flex;
+    gap: 4px;
+    color: var(--btnCommonT3TextColor);
+    border: 2px solid #CDCFDB;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--btnCommonT3BgColor);
+}
+.common-detail-button__link--type4 {
+    border: 0;
+    padding: 5px 15px 6px 20px;
+    background-color: #fff;
+    color: #00606C;
+    font-size: 14px;
+    font-weight: 700;
+    box-sizing: border-box;
+    min-width: 149px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+}
+.common-detail-button--hovered .common-detail-button__link--type3 {
+    background-color: #CDCFDB;
+    color: #222;
+}
+.common-detail-button--hovered .common-detail-button__link--type4 {
+    color: #222;
+}
+.common-detail-button__link--type2::after,
+.common-detail-button__link--type3::after,
+.common-detail-button__link--type5::after,
+.common-detail-button__link--type7::after {
+    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png);
+}
+.common-detail-button--hovered .common-detail-button__link--type2::after,
+.common-detail-button--hovered .common-detail-button__link--type3::after,
+.common-detail-button--hovered .common-detail-button__link--type5::after,
+.common-detail-button--hovered .common-detail-button__link--type7::after {
+    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow_on.png);
+}
+.common-detail-button__link--type4::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 13px;
+    background: url(https://lwi.nexon.com/maplestory/home/arrow_color.png) center center no-repeat;
+}
+.common-detail-button--hovered .common-detail-button__link--type4::after {
+    background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_on.png);
 }

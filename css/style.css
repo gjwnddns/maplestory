@@ -203,15 +203,9 @@ header a .user-menu-icon { transition: all .15s linear; }
     transition: 0.2s linear;
 }
 
-.hidden-name--hovered {
-    opacity: 1;
-    visibility: visible;
-}
+.hidden-name--hovered { opacity: 1; visibility: visible; }
 
-.user-menu-icon {
-    width: 22px;
-    height: 22px;
-}
+.user-menu-icon { width: 22px; height: 22px; }
 
 /* Block : 넥슨 현대카드 */
 .nexon-hyundai-card { margin: 3px 5px 0 6px; }
@@ -299,9 +293,7 @@ main { position: relative; }
 }
 
 .main-nav--sticky,
-.main-nav--hovered {
-    background-color: var(--gnbFixedTopBg);
-}
+.main-nav--hovered { background-color: var(--gnbFixedTopBg); }
 .main-nav--sticky .categories__menu,
 .main-nav--hovered .categories__menu { color: #fff; }
 .main-nav--sticky .main-nav__btn-wrap { gap: 20px; }
@@ -370,10 +362,7 @@ main { position: relative; }
     gap: 19px;
 }
 
-.main-nav__logo {
-    position: absolute;
-    left: 0;
-}
+.main-nav__logo { position: absolute; left: 0; }
 
 .main-nav__categories { margin-top: 7px; }
 
@@ -559,9 +548,7 @@ main { position: relative; }
 		width: 114px;
 		background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm.png');
     }
-    .btn-login-nav-sticky__game-start--hovered {
-        background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm_on.png');
-    }
+    .btn-login-nav-sticky__game-start--hovered { background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm_on.png'); }
 }
 
 /* ========================================
@@ -639,9 +626,7 @@ main { position: relative; }
     font-weight: 600;
     overflow: hidden;
 }
-.slide-item__info__date--banner {
-    margin-top: 14px;
-}
+.slide-item__info__date--banner { margin-top: 14px; }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 배너 네비게이션 */
 .swiper-navigation--banner {
@@ -733,9 +718,7 @@ main { position: relative; }
     font-size: 0;
     margin-left: auto;
 }
-.event-modal__close--hovered {
-    background-image: url(https://lwi.nexon.com/maplestory/home/modal_close_type1_on.png);
-}
+.event-modal__close--hovered { background-image: url(https://lwi.nexon.com/maplestory/home/modal_close_type1_on.png); }
 .event-modal__list {
     height: 362px;
     overflow-y: auto;
@@ -807,9 +790,7 @@ main { position: relative; }
     transition: border-color var(--transition-speed), color var(--transition-speed);
 }
 
-.event-item--hovered .event-item__category {
-    border-color: rgba(34, 34, 34, 0.20);
-}
+.event-item--hovered .event-item__category { border-color: rgba(34, 34, 34, 0.20); }
 
 .event-item__date {
     flex: 0 0 auto;
@@ -822,22 +803,16 @@ main { position: relative; }
 .event-item--hovered .event-item__date { color: #222; }
 
 /* Block : 대시보드 (공지, 로그인, 주요 업데이트 정보) */
-.dashboard__outer {
-    margin-top: 62px;
-}
+.dashboard__outer { margin-top: 62px; }
 .dashboard__inner {
     display: flex;
     gap: 51px;
     justify-content: space-between;
 }
-.dashboard__inner > div {
-    flex: 1;
-}
+.dashboard__inner > div { flex: 1; }
 
 /* Block : 공지사항 */
-.notice {
-    overflow: hidden;
-}
+.notice { overflow: hidden; }
 .notice__items {
     border-top: 2px solid var(--noticelistLine);
     margin-top: 14px;
@@ -845,9 +820,7 @@ main { position: relative; }
     display: flex;
     flex-direction: column;
 }
-.notice__item:first-child {
-    border-top: 0;
-}
+.notice__item:first-child { border-top: 0; }
 .notice__item {
     display: flex;
     align-items: center;
@@ -880,9 +853,7 @@ main { position: relative; }
     flex: 0 0 auto;
     position: relative;
 }
-.notice-info__title-category--notice {
-    color: var(--noticeListColorType_1);
-}
+.notice-info__title-category--notice { color: var(--noticeListColorType_1); }
 .notice-info__title-category::before {
     content: '';
     width: 100%;
@@ -896,9 +867,7 @@ main { position: relative; }
     left: 0;
     opacity: .3;
 }
-.notice-info__title-category--notice::before {
-    border-color: var(--noticeListColorType_1);
-}
+.notice-info__title-category--notice::before { border-color: var(--noticeListColorType_1); }
 .notice-info__title-text {
     font-style: normal;
     font-weight: 600;
@@ -1007,9 +976,7 @@ main { position: relative; }
     margin: 114px auto 0;
     text-align: center;
 }
-.personal-default__title {
-    font-size: 18px;
-}
+.personal-default__title { font-size: 18px; }
 .personal-default__login {
     font-size: 17px;
     height: 48px;
@@ -1049,9 +1016,7 @@ main { position: relative; }
     box-sizing: border-box;
     font-size: 15px;
 }
-.personal-default__list__item:first-child {
-    padding-top: 0;
-}
+.personal-default__list__item:first-child { padding-top: 0; }
 .personal-default__list__item::before {
     content: '';
     display: inline-block;
@@ -1133,36 +1098,9 @@ main { position: relative; }
     height: 1px;
     background: linear-gradient(90deg, var(--noticelistLine) 85%, rgba(222, 225, 243, 0.00) 100%);
 }
-.update-info__button {
+.common-detail-button--update {
     justify-content: flex-start;
     margin-top: 26px;
-    display: flex;
-    gap: 3px;
-}
-.update-info__button-link {
-    padding: 5px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.50);
-    border-radius: 100px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    font-family: "PretendardVariable", "돋움", sans-serif;
-    transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
-}
-.update-info__button-link--detail {
-    font-size: 13px;
-    display: flex;
-    gap: 4px;
-    color: var(--btnCommonT3TextColor);
-    border: 2px solid #CDCFDB;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: var(--btnCommonT3BgColor);
-}
-.update-info__button-link--detail::after {
-    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png);
 }
 
 /* Block : 게임 정보 */
@@ -1176,9 +1114,7 @@ main { position: relative; }
     overflow: hidden;
     border-radius: 30px;
 }
-.board-box__swiper {
-    height: 100%;
-}
+.board-box__swiper { height: 100%; }
 .board-box__swiper-wrapper {
     position: relative;
     width: 100%;
@@ -1189,9 +1125,7 @@ main { position: relative; }
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box;
 }
-.slide-item--board {
-    border-radius: 0;
-}
+.slide-item--board { border-radius: 0; }
 .slide-item__img--board {
     left: 0;
     transform: translateX(0);
@@ -1265,12 +1199,8 @@ main { position: relative; }
     margin-top: 70px;
     background-color: var(--otherSectionColor);
 }
-.youtube__inner {
-    padding: 28px 0 30px;
-}
-.youtube__thumb {
-    margin-top: 17px;
-}
+.youtube__inner { padding: 28px 0 30px; }
+.youtube__thumb { margin-top: 17px; }
 .youtube__thumb-list {
     display: flex;
     gap: 27px;
@@ -1312,9 +1242,7 @@ main { position: relative; }
     height: 100%;
     transition: transform .4s cubic-bezier(0, 0.55, 0.45, 1);
 }
-.youtube-link--hovered .youtube-link__thumb > img {
-    transform: scale(1.2);
-}
+.youtube-link--hovered .youtube-link__thumb > img { transform: scale(1.2); }
 .youtube-link__title {
     text-align: center;
     font-weight: 500;
@@ -1343,8 +1271,215 @@ main { position: relative; }
 }
 
 /* Block : 뉴스 */
-.news {
-    margin: 70px 0;
+.news { margin: 70px 0; }
+.news__section {
+    display: flex;
+    justify-content: space-between;
+    gap: 51px;
+}
+@media (max-width: 1535px) {
+    .news__section { gap: 30px; }
 }
 
-/* Block : 뉴스 섹션 */
+/* Block : 뉴스 container */
+.news-container {
+    flex: 1;
+    max-width: 961px;
+    height: 318px;
+    background: url(https://lwi.nexon.com/maplestory/home/news_background.png) no-repeat right center;
+    border-radius: 30px 0 0 30px;
+    overflow: hidden;
+    position: relative;
+}
+.news-container__title {
+    color: #0FF;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    z-index: 1;
+}
+
+/* Block : 뉴스 스와이퍼 */
+.swiper__slide--news {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* Block : 뉴스 아이템 */
+.slide-item__info--news {
+    padding: 64px 0 0 48px;
+    display: flex;
+    gap: 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+}
+.slide-item__left--news {
+    width: 41.93%;
+    min-width: 288px;
+}
+.slide-item__left-title--news {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.slide-item__left-title-text--news {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slide-item__left-content--news {
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    height: 99px;
+    box-sizing: border-box;
+}
+.slide-item__right--news {
+    transform: rotate(0deg);
+    margin-top: 9px;
+    margin-right: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    transform-origin: center bottom;
+    transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+}
+.slide-item__right-img--news {
+    object-fit: cover;
+    width: 367px;
+    height: 215px;
+}
+
+/* Block : 뉴스 디테일 버튼 */
+.common-detail-button--news {
+    justify-content: flex-start;
+    margin-top: 18px;
+    display: flex;
+    gap: 3px;
+}
+
+/* Block : 뉴스 스와이프 네비게이션 */
+.swiper-navigation--news {
+    right: 0;
+    top: 0;
+}
+.swiper-navigation__prev--news,
+.swiper-navigation__next--news {
+    width: 26px;
+    height: 26px;
+    flex: 0 0 auto;
+    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    position: relative;
+    border-radius: 50% 0 0 50%;
+    overflow: hidden;
+    display: inherit;
+}
+.swiper-navigation__prev--news::after,
+.swiper-navigation__next--news::after {
+    background-image: var(--slideNavArrowOn);
+    background-color: transparent;
+}
+.swiper-navigation__pagination--news {
+    bottom: auto;
+    top: auto;
+}
+.swiper-navigation__current--news { color: var(--titleColor); }
+.swiper-navigation__total--news { color: var(--btnCommonT3TextColor2); }
+
+/* Block : 메이플 스토어 */
+.maple-store {
+    width: 684px;
+    position: relative;
+}
+@media (max-width: 1535px) {
+    .maple-store { width: 447px; }
+}
+.maple-store__banner {
+    height: 278px;
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+/* Block : 메이플 스토어 스와이퍼 */
+.swiper__slide--store {
+    width: 208.5px;
+    margin-right: 30px;
+}
+.slide-item__link--store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.slide-item__img-box--store {
+    overflow: hidden;
+    border-radius: 30px;
+}
+.slide-item__img--store {
+    width: 210px;
+    height: 220px;
+    object-fit: cover;
+    transition: transform .4s cubic-bezier(0, 0.55, 0.45, 1);
+}
+.slide-item__img--store--hovered { transform: scale(1.2); }
+.slide-item__text-box--store { text-align: center; }
+.slide-item__text--store {
+    line-height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+.slide-item__text--store::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='5' fill='url(%23paint0_linear_261_1048)'/%3E%3Cpath d='M8 14H6V6H8L12 11V6H14V14H12L8 9V14Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_261_1048' x1='1.01523' y1='4.33333' x2='20.6719' y2='5.51789' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF7733'/%3E%3Cstop offset='1' stop-color='%23FF9364'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+/* Block : 네비게이션 기본구조 + 메이플 스토어 네비게이션 */
+.swiper-navigation--store {
+    right: 0;
+    top: 0;
+}
+.swiper-navigation__prev--store,
+.swiper-navigation__next--store {
+    width: 26px;
+    height: 26px;
+    flex: 0 0 auto;
+    background-image: var(--slideNavArrow);
+    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    position: relative;
+    border-radius: 50% 0 0 50%;
+    overflow: hidden;
+}
+.swiper-navigation__prev--store::after,
+.swiper-navigation__next--store::after {
+    background-image: var(--slideNavArrowOn);
+    background-color: transparent;
+}
+.swiper-navigation__pagination--store {
+    background-color: transparent;
+    color: var(--btnCommonT3TextColor2);
+}
+.swiper-navigation__current--store { color: var(--titleColor); }
+.swiper-navigation__total--store { color: var(--btnCommonT3TextColor2); }
+.swiper-navigation__next--store {
+    transform: rotateY(180deg);
+    right: 1px;
+}
+
+
+

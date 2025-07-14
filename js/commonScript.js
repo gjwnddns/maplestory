@@ -33,3 +33,18 @@ commonTitleIcons.forEach(icon => {
         icon.classList.remove('common-title__icon--hovered');
     });
 });
+
+//common-detail-button hover 시,
+//common-detail-button--hovered 클래스 추가
+const commonDetailButtons = document.querySelectorAll('.common-detail-button');
+
+commonDetailButtons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        button.classList.add('common-detail-button--hovered');
+    });
+    button.addEventListener('mouseleave', () => {
+        button.classList.remove('common-detail-button--hovered');
+    });
+});
+
+
