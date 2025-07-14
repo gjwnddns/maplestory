@@ -231,3 +231,37 @@ img {
     transform: rotateY(180deg);
     right: 1px;
 }
+
+/* Block : 공용 모듈 제목 */
+.common-title {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.common-title__text {
+    font-size: 22px;
+    color: var(--titleColor);
+}
+.common-title__icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: var(--moreBtnImage) center center no-repeat;
+    position: relative;
+}
+.common-title__icon::after {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: var(--moreBtnImageOver) center center no-repeat;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity var(--transition-speed);
+}
+.common-title__icon--hovered::after {
+    opacity: 1;
+}
