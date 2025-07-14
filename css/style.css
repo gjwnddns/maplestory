@@ -42,6 +42,11 @@ etc
     z-index: 100;
 } */
 
+/* ========================================
+   Header
+======================================== */
+
+/* Block : Header */
 header {
     position: relative;
     z-index: 9999999;
@@ -64,10 +69,12 @@ header {
     zoom: 1;
     transition: all .15s linear;
 }
+
 header a {
     text-decoration: none;
     transition: all .15s linear;
 }
+
 /* 공통 아이콘 hover 스타일 */
 .menu-icon--hovered,
 .user-menu-icon--hovered { transition: all .2s linear; }
@@ -85,7 +92,9 @@ header a .user-menu-icon { transition: all .15s linear; }
     border-radius: 0;
     transition: all .15s linear;
 }
+
 .menu-toggle .menu-toggle__btn--hovered { color: #07f; }
+
 .menu-toggle .menu-toggle__btn .menu-icon {
     display: inline-block;
     width: 18px;
@@ -96,10 +105,12 @@ header a .user-menu-icon { transition: all .15s linear; }
     background-color: #17191d;
     transition: all .15s linear;
 }
+
 .menu-toggle .menu-toggle__btn--hovered .menu-icon {
     background-color: #07f;
     transition: all .2s linear;
 }
+
 .menu-toggle .menu-toggle__btn .text {
     box-sizing: border-box;
     margin: 0;
@@ -133,6 +144,7 @@ header a .user-menu-icon { transition: all .15s linear; }
     gap: 8px;
     list-style: none;
 }
+
 .user-menu__item { padding-top: 2px; }
 
 /* Blocks : 넥슨 현대카드, 넥슨 피시방 찾기, 회원가입, 로그인 */
@@ -146,6 +158,7 @@ header a .user-menu-icon { transition: all .15s linear; }
     font: 14px NEXON Gothic;
     color: #17191d;
 }
+
 .hidden-name {
     position: absolute;
     top: 22px;
@@ -166,10 +179,12 @@ header a .user-menu-icon { transition: all .15s linear; }
     visibility: hidden;
     transition: 0.2s linear;
 }
+
 .hidden-name--hovered {
     opacity: 1;
     visibility: visible;
 }
+
 .user-menu-icon {
     width: 22px;
     height: 22px;
@@ -177,8 +192,11 @@ header a .user-menu-icon { transition: all .15s linear; }
 
 /* Block : 넥슨 현대카드 */
 .nexon-hyundai-card { margin: 3px 5px 0 6px; }
+
 .nexon-hyundai-card .user-menu-icon { background: #191919 url(https://rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png) 0 0 no-repeat; }
+
 .nexon-hyundai-card--hovered .user-menu-icon { background-color: #07f; }
+
 .nexon-hyundai-card .badge {
     position: absolute;
     top: -2px;
@@ -198,7 +216,9 @@ header a .user-menu-icon { transition: all .15s linear; }
 
 /* Block : 넥슨 피시방 찾기 */
 .search-pcbang { margin: 3px 5px 0 6px; }
+
 .search-pcbang .user-menu-icon { background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location.svg) 0 0 no-repeat; }
+
 .search-pcbang--hovered .user-menu-icon {
     background: transparent url(https://rs.nxfs.nexon.com/gnb/images/ic-pcbang2-location-hover.svg) 0 0 no-repeat;
     transition: all .2s linear;
@@ -209,10 +229,12 @@ header a .user-menu-icon { transition: all .15s linear; }
     margin: 0 3px 0;
     transition: all .15s linear;
 }
+
 .join--hovered .name { color: #07f; }
 
 /* Block : 넥슨 로그인 */
 .login { margin: -3px 8px 0 0; }
+
 .login .name {
     min-width: 85px;
     height: 36px;
@@ -225,15 +247,22 @@ header a .user-menu-icon { transition: all .15s linear; }
     border-radius: 19px;
     transition: all .15s linear;
 }
+
 .login--hovered .name {
     color: #fff;
     background-color: #07f;
     border-color: #07f;
 }
 
-main {
-    position: relative;
-}
+/* ========================================
+   Main
+======================================== */
+
+main { position: relative; }
+
+/* ========================================
+   Main Navigation
+======================================== */
 
 /* Block : 메인 네비게이션 */
 .main-nav {
@@ -245,6 +274,7 @@ main {
     font-family: "PretendardVariable", "Malgun Gothic", sans-serif;
     letter-spacing: normal;
 }
+
 .main-nav--sticky,
 .main-nav--hovered {
     background-color: var(--gnbFixedTopBg);
@@ -252,7 +282,10 @@ main {
 .main-nav--sticky .categories__menu,
 .main-nav--hovered .categories__menu { color: #fff; }
 .main-nav--sticky .main-nav__btn-wrap { gap: 20px; }
-.main-nav--sticky .btn-login-nav-sticky { width: 114px; }
+.main-nav--sticky .btn-login-nav-sticky { width: 210px; }
+@media (max-width: 1535px) {
+    .main-nav--sticky .btn-login-nav-sticky { width: 114px; }
+}
 .main-nav--hovered::after { height: 100%; }
 .main-nav--hovered .main-nav__outer::before { opacity: 1; }
 .main-nav--hovered .main-nav__outer::after { height: 100%; }
@@ -270,6 +303,7 @@ main {
     min-width: 1200px;
     min-height: var(--gnbHeight);
 }
+
 .main-nav__outer::before {
     position: absolute;
     top: 0;
@@ -283,6 +317,7 @@ main {
     opacity: 0;
     transition: opacity .1s;
 }
+
 .main-nav__outer::after {
     position: absolute;
     top: 0;
@@ -311,11 +346,14 @@ main {
     padding: 14px 0;
     gap: 19px;
 }
+
 .main-nav__logo {
     position: absolute;
     left: 0;
 }
+
 .main-nav__categories { margin-top: 7px; }
+
 .main-nav__btn-wrap {
     position: absolute;
     top: 0;
@@ -334,7 +372,9 @@ main {
     overflow: hidden;
     transition: height .1s;
 }
+
 .categories__item { position: relative; }
+
 .categories__menu {
     display: block;
     padding: 10px 50px;
@@ -345,7 +385,9 @@ main {
     text-align: center;
     transition: color 0.1s;
 }
+
 .categories a > span { position: relative; }
+
 .categories a span::before {
     position: absolute;
     bottom: -1px;
@@ -356,7 +398,9 @@ main {
     border-bottom: 1px solid #E1E4FF;
     transition: width .2s var(--gnbEaseing);
 }
+
 .categories a:hover > span::before { width: 100%; }
+
 .categories__item.new .categories__menu > span::after {
     position: absolute;
     top: 0;
@@ -368,15 +412,18 @@ main {
     background-color: #FF7A1A;
     border-radius: 50%;
 }
+
 .categories__menu > span::before {
     bottom: -2px;
     border-bottom: 2px solid #E1E4FF;
 }
+
 .categories__item.new > .categories__menu > span::after {
     right: -10px;
     width: 8px;
     height: 8px;
 }
+
 .categories__dropdown {
     display: flex;
     flex-direction: column;
@@ -384,6 +431,7 @@ main {
     margin: 46px 0 26px;
     gap: 7px;
 }
+
 .categories__submenu {
     position: relative;
     display: flex;
@@ -397,6 +445,7 @@ main {
     color: #E1E4FF;
     text-align: center;
 }
+
 .categories__submenu[target="_blank"]::after {
     display: block;
     height: 18px;
@@ -404,6 +453,7 @@ main {
     opacity: .3;
     transition: opacity .01s ease .2s;
 }
+
 .categories__submenu--hovered[target="_blank"]::after { opacity: 1; }
 
 /* Block : 네비게이션 버튼 모음 */
@@ -428,6 +478,7 @@ main {
     cursor: pointer;
     transition: background var(--gnbAnimSpeed) ease;
 }
+
 .dark-mode__on,
 .dark-mode__off {
     display: flex;
@@ -438,20 +489,29 @@ main {
     border-radius: 50%;
     transition: background var(--gnbAnimSpeed) ease;
 }
+
 .dark-mode__on { background-color: var(--btnDark); }
+
 .dark-mode__off { background-color: var(--btnLight); }
+
 .dark-mode__on svg {
     fill: #BBBECD;
     transition: fill var(--gnbAnimSpeed) ease;
 }
+
 .dark-mode__off svg {
     fill: #BBBECD;
     transition: fill var(--gnbAnimSpeed) ease;
 }
+
 .dark-mode--hovered .dark-mode__on svg { fill: #46474E; }
+
 .dark-mode--hovered .dark-mode__off svg { fill: #FFF; }
+
 .dark-mode__on--active svg { fill: var(--darkOnOffBg); }
+
 .dark-mode__off--active svg { fill: #DEE1F9; }
+
 .dark-mode__off--active { background-color: var(--btnLight); }
 
 /* Block : 네비게이션 sticky시 나오는 로그인 버튼 */
@@ -462,14 +522,34 @@ main {
     transition: width var(--gnbAnimSpeed) cubic-bezier(0.85, 0, 0.15, 1);
 }
 .btn-login-nav-sticky__game-start {
-    display: block;
-    width: 114px;
-    height: 100%;
-    font-size: 0;
-    background-image: url(https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm.png);
+    width: 210px;
+	height: 100%;
+	background: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart.png') no-repeat center center;
+	font-size: 0;
+	display: block;
+}
+.btn-login-nav-sticky__game-start--hovered {
+    background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_on.png')
+}
+@media (max-width: 1535px) {
+    .btn-login-nav-sticky__game-start {
+		width: 114px;
+		background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm.png');
+    }
+    .btn-login-nav-sticky__game-start--hovered {
+        background-image: url('https://lwi.nexon.com/maplestory/common/gnb_btn_gameStart_sm_on.png');
+    }
 }
 
+/* ========================================
+   Main Content
+======================================== */
+
 .main-content { overflow: hidden; }
+
+/* ========================================
+   Banner
+======================================== */
 
 /* Block : 배너 */
 .banner__outer {
@@ -477,6 +557,7 @@ main {
     display: flex;
     justify-content: center;
 }
+
 .banner__inner {
     position: relative;
     width: 100%;
@@ -484,11 +565,13 @@ main {
     height: 324px;
     overflow: hidden;
 }
+
 .banner__swiper {
     border-radius: 30px;
     overflow: hidden;
     height: 100%;
 }
+
 .banner__swiper::before {
     content: var(--mainBannerRound);
     position: absolute;
@@ -496,6 +579,7 @@ main {
     top: -28px;
     z-index: 10;
 }
+
 .banner__swiper::after {
     content: var(--mainBannerRound);
     position: absolute;
@@ -504,6 +588,7 @@ main {
     top: -28px;
     z-index: 10;
 }
+
 .banner__items {
     position: relative;
     width: 100%;
@@ -514,6 +599,7 @@ main {
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box;
 }
+
 .banner__item {
     flex-shrink: 0;
     width: 1696px;
@@ -524,6 +610,7 @@ main {
     display: block;
     overflow: hidden;
 }
+
 .banner__item-link {
     display: block;
     width: 100%;
@@ -531,12 +618,14 @@ main {
     overflow: hidden;
     position: relative;
 }
+
 .banner__item-link img {
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
 }
+
 .banner__item-info {
     position: absolute;
     color: #fff;
@@ -546,6 +635,7 @@ main {
     top: 64px;
     width: 100%;
 }
+
 .banner__item-info__tag {
     font-size: 15px;
     padding: 3px 14px;
@@ -555,6 +645,7 @@ main {
     display: inline-block;
     font-weight: 500;
 }
+
 .banner__item-info__title {
     margin-top: 7px;
     font-size: 50px;
@@ -564,10 +655,12 @@ main {
     font-weight: 600;
     overflow: hidden;
 }
+
 .banner__item-info__date {
     margin-top: 14px;
     font-weight: 500;
 }
+
 .banner__navigation {
     position: absolute;
     max-width: 1324px;
@@ -577,14 +670,17 @@ main {
     width: 100%;
     z-index: 10;
 }
+
 .banner__navigation__outer {
     display: flex;
     gap: 8px;
 }
+
 .banner__navigation__inner {
     display: flex;
     align-items: center;
 }
+
 .banner__navigation__prev,
 .banner__navigation__next {
     margin: 0;
@@ -602,13 +698,12 @@ main {
     border-radius: 50% 0 0 50%;
     overflow: hidden;
 }
-.banner__navigation__prev {
 
-}
 .banner__navigation__next {
     transform: rotateY(180deg);
     right: 1px;
 }
+
 .banner__navigation__pagination {
     position: relative;
     font-size: 12px;
@@ -622,6 +717,7 @@ main {
     font-weight: 700 !important;
     color: #6D707F;
 }
+
 .banner__navigation__event-more {
     font-size: 0;
     display: block;
@@ -632,6 +728,7 @@ main {
     border-radius: 50%;
     overflow: hidden;
 }
+
 .banner__navigation__event-more::after {
     content: '';
     width: 100%;
@@ -647,7 +744,12 @@ main {
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
+
 .banner__navigation__current { color: #222; }
+
+/* ========================================
+   Event Modal
+======================================== */
 
 /* Block : 이벤트 모달 */
 .event-modal {
@@ -660,9 +762,9 @@ main {
     z-index: 100000000;
     display: none;
 }
-.event-modal--active {
-    display: block;
-}
+
+.event-modal--active { display: block; }
+
 .event-modal__inner {
     position: relative;
     display: flex;
@@ -672,6 +774,7 @@ main {
     width: 870px;
     margin: 0 auto;
 }
+
 .event-modal__close {
     position: absolute;
     right: -70px;
@@ -685,20 +788,24 @@ main {
     font-size: 0;
     margin-left: auto;
 }
+
 .event-modal__close--hovered {
     background-image: url(https://lwi.nexon.com/maplestory/home/modal_close_type1_on.png);
 }
+
 .event-modal__list {
     height: 362px;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 20px;
 }
+
 .event-modal__list > ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .event-item {
     display: flex;
     align-items: center;
@@ -716,9 +823,9 @@ main {
     overflow: hidden;
     transition: color var(--transition-speed);
 }
-.event-item--hovered {
-    color: #222;
-}
+
+.event-item--hovered { color: #222; }
+
 .event-item::before {
     content: '';
     display: block;
@@ -731,7 +838,9 @@ main {
     background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
     transition: opacity var(--transition-speed);
 }
+
 .event-item--hovered::before { opacity: 1; }
+
 .event-item__title {
     white-space: nowrap;
     overflow: hidden;
@@ -739,6 +848,7 @@ main {
     font-size: 18px;
     position: relative;
 }
+
 .event-item__category {
     font-style: normal;
     display: inline-flex;
@@ -753,9 +863,11 @@ main {
     font-weight: 600;
     transition: border-color var(--transition-speed), color var(--transition-speed);
 }
+
 .event-item--hovered .event-item__category {
     border-color: rgba(34, 34, 34, 0.20);
 }
+
 .event-item__date {
     flex: 0 0 auto;
     font-size: 13px;
@@ -763,6 +875,5 @@ main {
     position: relative;
     transition: color var(--transition-speed);
 }
-.event-item--hovered .event-item__date {
-    color: #222;
-}
+
+.event-item--hovered .event-item__date { color: #222; }

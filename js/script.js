@@ -180,6 +180,18 @@ if (darkModeOff) {
     });
 }
 
+// 로그인 버튼 hover 시,
+// 로그인 버튼--hovered 클래스 추가
+const loginBtn = document.querySelector('.btn-login-nav-sticky__game-start');
+
+loginBtn.addEventListener('mouseenter', () => {
+    loginBtn.classList.add('btn-login-nav-sticky__game-start--hovered');
+});
+
+loginBtn.addEventListener('mouseleave', () => {
+    loginBtn.classList.remove('btn-login-nav-sticky__game-start--hovered');
+});
+
 //banner__navigation__event-more 클릭시,
 //event-modal--active 클래스 제거, 추가가
 const eventMore = document.querySelector('.banner__navigation__event-more');
