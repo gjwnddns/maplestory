@@ -407,20 +407,23 @@
                 <section class="banner">
                     <div class="banner__outer">
                         <div class="banner__inner">
-                            <div class="banner__swiper">
-                                <div class="banner__items">
+                            <!-- Block : 공용 스와이퍼 기본 구조 + 배너 스와이퍼 -->
+                            <div class="swiper swiper--banner">
+                                <div class="swiper__wrapper swiper__wrapper--banner">
                                     <div
-                                        class="banner__item banner__item--next">
-                                        <a class="banner__item-link" href="#" target="_blank">
+                                        class="swiper__slide swiper__slide--banner">
+                                        <!-- Block : 슬라이드 아이템 -->
+                                        <a class="slide-item" href="#" target="_blank">
                                             <img
+                                                class="slide-item__img"
                                                 src="https://jarvis.dn.nexoncdn.co.kr/maplestory/gb/20250619/20250619002701331-439670142f6a4a7697788201fdd24fcd.png"
                                                 alt="태양에 도전하는 매화"
                                             />
-                                            <div class="banner__item-info">
-                                                <div class="banner__item-info__inner">
-                                                    <h3 class="banner__item-info__tag">렌 보스격파 이벤트</h3>
-                                                    <h4 class="banner__item-info__title">태양에 도전하는 매화</h4>
-                                                    <p class="banner__item-info__date"
+                                            <div class="slide-item__info slide-item__info--banner">
+                                                <div class="slide-item__info__inner">
+                                                    <h3 class="slide-item__info__tag">렌 보스격파 이벤트</h3>
+                                                    <h4 class="slide-item__info__title slide-item__info__title--banner">태양에 도전하는 매화</h4>
+                                                    <p class="slide-item__info__date slide-item__info__date--banner"
                                                         >2025년 6월 19일(목) 점검 후 ~ 9월 17일(수) 오후 11시 59분</p
                                                     >
                                                 </div>
@@ -607,16 +610,17 @@
                                     <!-- Block : 게임 정보 -->
                                     <div class="board-box">
                                         <div class="board-box__inner">
-                                            <div class="board-box__swiper">
-                                                <div class="board-box__swiper-wrapper">
-                                                    <div class="board-box__swiper-item">
+                                            <!-- Block : 공용 스와이퍼 기본 구조 + 게임 정보 스와이퍼 -->
+                                            <div class="swiper">
+                                                <div class="swiper__wrapper">
+                                                    <div class="swiper__slide">
                                                         <!-- Block : 게임 정보 아이템 -->
-                                                        <a class="board-item" href="#">
-                                                            <img class="board-item__img" src="https://jarvis.dn.nexoncdn.co.kr/maplestory/gb/20250602/20250602041635516-574e704bbd93470d920be70d9f3ee21b.jpg" alt="">
-                                                            <div class="board-item__info">
-                                                                <div class="board-item__info__inner">
-                                                                    <h4 class="board-item__info__title">코디패키지</h4>
-                                                                    <p class="board-item__info__date">2025년 4월 17일(목) 점검 후 ~ <br>7월 16일(수) 오후 11시 59분</p>
+                                                        <a class="slide-item slide-item--board" href="#">
+                                                            <img class="slide-item__img slide-item__img--board" src="https://jarvis.dn.nexoncdn.co.kr/maplestory/gb/20250602/20250602041635516-574e704bbd93470d920be70d9f3ee21b.jpg" alt="">
+                                                            <div class="slide-item__info slide-item__info--board">
+                                                                <div class="slide-item__info__inner">
+                                                                    <h4 class="slide-item__info__title slide-item__info__title--board">코디패키지</h4>
+                                                                    <p class="slide-item__info__date slide-item__info__date--board">2025년 4월 17일(목) 점검 후 ~ <br>7월 16일(수) 오후 11시 59분</p>
                                                                 </div>
                                                             </div>
                                                         </a>
@@ -730,7 +734,38 @@
                     </div>
                 </section>
                 <!-- Block : 뉴스 -->
-                <section class="news"> </section>
+                <section class="news">
+                    <div class="news__outer">
+                        <div class="news__inner">
+                             <div class="news__section">
+                                <!-- Block : 뉴스 섹션 -->
+                                <div class="news-section">
+                                    <h3 class="news-section__title">
+                                        메이플스토리 뉴스
+                                    </h3>
+                                    <!-- Block : 스와이퍼 기본 구조 + 뉴스 네비게이션 -->
+                                     <div class="swiper-navigation">
+                                        <div class="swiper-navigation__outer">
+                                            <div class="swiper-navigation__inner">
+
+                                            </div>
+                                        </div>
+                                     </div>
+                                </div>
+                                <!-- Block : 메이플 스토어 섹션 -->
+                                <div class="maple-store-section">
+
+                                </div>
+                             </div>
+                             <!-- Block : 테스트 월드 -->
+                             <div class="test-world">
+                                <div class="test-world__inner">
+
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Block : 정보 -->
                 <section class="info"> </section>
                 <!-- Block : 직업 -->

@@ -599,21 +599,14 @@ main { position: relative; }
     height: 324px;
     overflow: hidden;
 }
-.banner__swiper {
-    border-radius: 30px;
-    overflow: hidden;
-    height: 100%;
-}
-
-.banner__swiper::before {
+.banner__inner::before {
     content: var(--mainBannerRound);
     position: absolute;
     left: 0;
     top: -28px;
     z-index: 10;
 }
-
-.banner__swiper::after {
+.banner__inner::after {
     content: var(--mainBannerRound);
     position: absolute;
     transform: rotateY(180deg);
@@ -621,65 +614,23 @@ main { position: relative; }
     top: -28px;
     z-index: 10;
 }
-
-.banner__items {
-    position: relative;
-    width: 100%;
+.swiper--banner {
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
     height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
-    box-sizing: content-box;
 }
-
-.banner__item {
-    flex-shrink: 0;
+.swiper__slide--banner {
+    overflow: hidden;
     width: var(--main-max-width);
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    display: block;
-    overflow: hidden;
 }
-
-.banner__item-link {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.banner__item-link img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
-
-.banner__item-info {
-    position: absolute;
-    color: #fff;
+.slide-item__info--banner {
     max-width: 1324px;
     left: 50%;
     transform: translateX(-50%);
     top: 64px;
     width: 100%;
 }
-
-.banner__item-info__tag {
-    font-size: 15px;
-    padding: 3px 14px;
-    border: 2px solid #fff;
-    box-sizing: border-box;
-    border-radius: 15px;
-    display: inline-block;
-    font-weight: 500;
-}
-
-.banner__item-info__title {
+.slide-item__info__title--banner {
     margin-top: 7px;
     font-size: 50px;
     max-width: 476px;
@@ -688,10 +639,8 @@ main { position: relative; }
     font-weight: 600;
     overflow: hidden;
 }
-
-.banner__item-info__date {
+.slide-item__info__date--banner {
     margin-top: 14px;
-    font-weight: 500;
 }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 배너 네비게이션 */
@@ -1240,32 +1189,14 @@ main { position: relative; }
     transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
     box-sizing: content-box;
 }
-.board-box__swiper-item {
-    overflow: hidden;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    display: block;
-}
-.board-item {
+.slide-item--board {
     border-radius: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
 }
-.board-item__img {
+.slide-item__img--board {
     left: 0;
     transform: translateX(0);
-    position: absolute;
-    top: 0;
 }
-.board-item__info {
-    position: absolute;
-    color: #fff;
+.slide-item__info--board {
     transform: translateX(0);
     max-width: initial;
     left: 30px;
@@ -1273,7 +1204,7 @@ main { position: relative; }
     width: 210px;
     margin: 0;
 }
-.board-item__info__title {
+.slide-item__info__title--board {
     font-size: 20px;
     height: auto;
     word-break: keep-all;
@@ -1281,7 +1212,7 @@ main { position: relative; }
     font-weight: 500;
     overflow: hidden
 }
-.board-item__info__date {
+.slide-item__info__date--board {
     margin-top: 8px;
     padding-top: 8px;
     word-break: keep-all;
@@ -1409,4 +1340,9 @@ main { position: relative; }
 .youtube-link__title > p > span {
     vertical-align: middle;
     font-size: 16px;
+}
+
+/* Block : 뉴스 */
+.news {
+    margin: 70px 0;
 }
