@@ -895,7 +895,7 @@ main { position: relative; }
 .personal-box {
     position: relative;
     z-index: 10;
-    width: 360px;
+    max-width: 360px;
     height: 390px;
 }
 .personal-box::before {
@@ -1373,7 +1373,7 @@ main { position: relative; }
     width: 26px;
     height: 26px;
     overflow: hidden;
-    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    background-image: var(--slideNavArrow);
     border-radius: 50% 0 0 50%;
 }
 .swiper-navigation__prev--news::after,
@@ -1384,6 +1384,8 @@ main { position: relative; }
 .swiper-navigation__pagination--news {
     top: auto;
     bottom: auto;
+    background-color: transparent;
+    color: var(--btnCommonT3TextColor2);
 }
 .swiper-navigation__current--news { color: var(--titleColor); }
 .swiper-navigation__total--news { color: var(--btnCommonT3TextColor2); }
@@ -1404,7 +1406,7 @@ main { position: relative; }
 
 /* Block : 메이플 스토어 스와이퍼 */
 .swiper__slide--store {
-    width: 208.5px;
+    width: 208px;
     margin-right: 30px;
 }
 .slide-item__link--store {
@@ -1454,7 +1456,7 @@ main { position: relative; }
     width: 26px;
     height: 26px;
     overflow: hidden;
-    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    background-image: var(--slideNavArrow);
     border-radius: 50% 0 0 50%;
 }
 .swiper-navigation__prev--store::after,
@@ -2119,6 +2121,12 @@ main { position: relative; }
     position: relative;
     background-color: transparent;
     border-radius: 100px;
+    font-family: "PretendardVariable", "돋움", sans-serif;
+    transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
+}
+.job-info__play-btn--hovered {
+    background-color: #fff;
+    color: #6C6E88;
 }
 .job-info__play-btn::before {
     content: '';
@@ -2132,6 +2140,10 @@ main { position: relative; }
     z-index: -1;
     transition: opacity var(--transition-speed);
 }
+.job-info__play-btn--hovered::before {
+	color: #6C6E88;
+	background: #fff;
+}
 .job-info__play-btn::after {
     width: 26px;
     height: 27px;
@@ -2139,6 +2151,7 @@ main { position: relative; }
     content: '';
     display: block;
 }
+.job-info__play-btn--hovered::after { background-image: url("data:image/svg+xml,%3Csvg width='26' height='27' viewBox='0 0 26 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.6414 6.30313C25.6414 6.30313 25.2898 3.82109 24.207 2.73125C22.8359 1.29688 21.3031 1.28984 20.6 1.20547C15.5656 0.839844 13.007 0.839844 13.007 0.839844H12.993C12.993 0.839844 10.4344 0.839844 5.4 1.20547C4.69688 1.28984 3.16406 1.29688 1.79297 2.73125C0.710156 3.82109 0.365625 6.30313 0.365625 6.30313C0.365625 6.30313 0 9.22109 0 12.132V14.8602C0 17.7711 0.358594 20.6891 0.358594 20.6891C0.358594 20.6891 0.710156 23.1711 1.78594 24.2609C3.15703 25.6953 4.95703 25.6461 5.75859 25.8008C8.64141 26.075 13 26.1594 13 26.1594C13 26.1594 15.5656 26.1453 20.6 25.7867C21.3031 25.7023 22.8359 25.6953 24.207 24.2609C25.2898 23.1711 25.6414 20.6891 25.6414 20.6891C25.6414 20.6891 26 17.7781 26 14.8602V12.132C26 9.22109 25.6414 6.30313 25.6414 6.30313ZM10.7407 17.4148C10.0751 17.7599 9.28047 17.2768 9.28047 16.527V9.70403C9.28047 8.95298 10.0775 8.46999 10.7433 8.81756L17.3007 12.2409C18.0182 12.6155 18.0167 13.6427 17.2982 14.0152L10.7407 17.4148Z' fill='%236C6E88'/%3E%3C/svg%3E%0A"); }
 .job-info__main-img {
     position: absolute;
     bottom: 0;

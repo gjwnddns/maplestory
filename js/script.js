@@ -334,6 +334,19 @@ jobThumbnailsSwiperSlides.forEach(slide => {
     });
 });
 
+//job-info__play-btn hover 시,
+//job-info__play-btn--hovered 클래스 추가
+const jobInfoPlayBtns = document.querySelectorAll('.job-info__play-btn');
+
+jobInfoPlayBtns.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+        btn.classList.add('job-info__play-btn--hovered');
+    });
+    btn.addEventListener('mouseleave', () => {
+        btn.classList.remove('job-info__play-btn--hovered');
+    });
+});
+
 //select-site hover 시,
 //select-site--hovered 클래스 추가
 const selectSite = document.querySelector('.select-site');
