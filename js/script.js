@@ -307,3 +307,29 @@ patchItems.forEach(item => {
         item.classList.remove('patch-item--hovered');
     });
 });
+
+//job-thumbnails__btn hover 시,
+//job-thumbnails__btn--hovered 클래스 추가
+const jobThumbnailsBtns = document.querySelectorAll('.job-thumbnails__btn');
+
+jobThumbnailsBtns.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+        btn.classList.add('job-thumbnails__btn--hovered');
+    });
+    btn.addEventListener('mouseleave', () => {
+        btn.classList.remove('job-thumbnails__btn--hovered');
+    });
+});
+
+//swiper-slide--job-thumbnail hover 시,
+//swiper-slide--job-hovered 클래스 추가
+const jobThumbnailsSwiperSlides = document.querySelectorAll('.swiper-slide--job-thumbnail');
+
+jobThumbnailsSwiperSlides.forEach(slide => {
+    slide.addEventListener('mouseenter', () => {
+        slide.classList.add('swiper-slide--job-hovered');
+    });
+    slide.addEventListener('mouseleave', () => {
+        slide.classList.remove('swiper-slide--job-hovered');
+    });
+});

@@ -1919,3 +1919,340 @@ main { position: relative; }
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
+
+/* Block : 직업 */
+.job__outer {
+    height: 710px;
+    position: relative;
+}
+.job__inner {
+    position: relative;
+}
+.job__contents {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #595d7a;
+}
+
+/* Block : 직업 탭 */
+.job-tab {
+    background-color: #323441;
+    display: inline-flex;
+    border-radius: 0 0 30px 30px;
+    padding: 0 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.job-tab ul {
+    display: flex;
+    position: relative;
+}
+.job-tab ul li:nth-last-of-type(1) .tab-btn::after {
+	display: none;
+}
+.job-tab__line {
+    content: '';
+    width: 188px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    height: 4px;
+    background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
+}
+
+/* Block : 탭 버튼 */
+.tab-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 78px;
+    padding: 0 44px;
+    color: #A1A5CA;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    min-width: 100px;
+    box-sizing: initial;
+}
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    border-right: 1px solid #A1A5CA;
+    opacity: .3;
+}
+.tab-btn--active {
+    color: #fff;
+}
+.tab-btn__icon {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+}
+.tab-btn__icon svg {
+    color: #6C6E88;
+}
+.tab-btn--active .tab-btn__icon svg {
+    color: #fff;
+}
+
+/* Block : 스와이퍼 기본 구조 + 직업 스와이퍼 */
+.swiper__slide--job {
+    background-image: url(https://lwi.nexon.com/maplestory/home/job/bg/char_bg_48.jpg);
+    width: 1905px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Block : 직업 정보 */
+.job-info {
+    max-width: 1696px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+}
+.job-info__inner {
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 184px;
+    width: 500px;
+}
+.job-info__tag {
+    display: flex;
+    gap: 4px;
+}
+.job-info__tag-new {
+    height: 30px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 17px;
+    gap: 3px;
+    text-transform: uppercase;
+    background-color: #FF5B5B;
+}
+.job-info__tag-new::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 16px;
+    background: url(https://lwi.nexon.com/maplestory/home/state_new.png) center center no-repeat;
+}
+.job-info__tag-text {
+    border: 2px solid rgba(255, 255, 255, 0.30);
+    padding: 0 20px;
+    height: 30px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 17px;
+    font-size: 15px;
+}
+.job-info__tag-text > span {
+    opacity: .5;
+}
+.job-info__tag-text > span:nth-last-child(1) {
+    opacity: 1;
+}
+.job-info__tag-text > span + span {
+    margin-left: 9px;
+}
+.job-info__tag-text > span + span::before {
+    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png);
+    margin-right: 9px;
+}
+.job-info__title {
+    font-size: 50px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+.job-info__main-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.job-info__weapon {
+    margin-top: 28px;
+    font-weight: 500;
+    padding-top: 28px;
+    border-top: 2px solid rgba(255, 255, 255, .2);
+}
+.job-info__play-btn {
+    height: 44px;
+    width: 232px;
+    font-size: 17px;
+    margin-top: 28px;
+    font-weight: 500;
+    border: 0;
+    padding: 5px 15px 6px 20px;
+    color: #fff;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border-radius: 100px;
+}
+.job-info__play-btn::before {
+    content: '';
+    display: block;
+    background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: opacity var(--transition-speed);
+}
+.job-info__play-btn::after {
+    width: 26px;
+    height: 27px;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='27' viewBox='0 0 26 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.6414 6.30313C25.6414 6.30313 25.2898 3.82109 24.207 2.73125C22.8359 1.29688 21.3031 1.28984 20.6 1.20547C15.5656 0.839844 13.007 0.839844 13.007 0.839844H12.993C12.993 0.839844 10.4344 0.839844 5.4 1.20547C4.69688 1.28984 3.16406 1.29688 1.79297 2.73125C0.710156 3.82109 0.365625 6.30313 0.365625 6.30313C0.365625 6.30313 0 9.22109 0 12.132V14.8602C0 17.7711 0.358594 20.6891 0.358594 20.6891C0.358594 20.6891 0.710156 23.1711 1.78594 24.2609C3.15703 25.6953 4.95703 25.6461 5.75859 25.8008C8.64141 26.075 13 26.1594 13 26.1594C13 26.1594 15.5656 26.1453 20.6 25.7867C21.3031 25.7023 22.8359 25.6953 24.207 24.2609C25.2898 23.1711 25.6414 20.6891 25.6414 20.6891C25.6414 20.6891 26 17.7781 26 14.8602V12.132C26 9.22109 25.6414 6.30313 25.6414 6.30313ZM10.7407 17.4148C10.0751 17.7599 9.28047 17.2768 9.28047 16.527V9.70403C9.28047 8.95298 10.0775 8.46999 10.7433 8.81756L17.3007 12.2409C18.0182 12.6155 18.0167 13.6427 17.2982 14.0152L10.7407 17.4148Z' fill='white'/%3E%3C/svg%3E");
+    content: '';
+    display: block;
+}
+.job-info__main-img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10.43%;
+    transform: translateX(0px);
+    transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* Block : 직업 썸네일 */
+.job-thumbnails {
+    position: absolute;
+    top: 577px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 14px;
+    max-width: 1696px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.job-thumbnails__btn {
+    opacity: .5;
+    left: auto;
+    right: auto;
+    margin: 0;
+    top: 0;
+    position: relative;
+    height: inherit;
+    font-size: 0;
+    pointer-events: initial;
+    cursor: pointer;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+}
+.job-thumbnails__btn--hovered {
+    opacity: 1;
+}
+.job-thumbnails__btn svg {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transform-origin: center;
+}
+.job-thumbnails__btn--next {
+    transform: rotateY(180deg);
+}
+
+/* Block : 스와이퍼 기본 구조 + 직업 썸네일 스와이퍼 */
+.job-thumbnails__swiper {
+    overflow: hidden;
+    max-width: 900px;
+}
+.swiper-slide--job-thumbnail {
+    width: 100px !important;
+    height: initial !important;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.swiper-slide__thumb-img {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background-color: #46495F;
+}
+.swiper-slide__thumb-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
+    opacity: 0;
+}
+.swiper-slide--job-hovered .swiper-slide__thumb-img::before,
+.swiper-slide--job-active .swiper-slide__thumb-img::before {
+    opacity: 1;
+    transition: opacity var(--transition-speed);
+}
+.swiper-slide__thumb-img > img {
+    mix-blend-mode: Luminosity;
+    position: relative;
+}
+.swiper-slide--job-hovered .swiper-slide__thumb-img > img,
+.swiper-slide--job-active .swiper-slide__thumb-img > img {
+    mix-blend-mode: normal;
+}
+.swiper-slide__thumb-txt {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: .67;
+    text-align: center;
+}
+.swiper-slide--job-hovered .swiper-slide__thumb-txt,
+.swiper-slide--job-active .swiper-slide__thumb-txt {
+    opacity: 1;
+}
+
+/* 푸터 */
+footer {
+    background-color: transparent;
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
