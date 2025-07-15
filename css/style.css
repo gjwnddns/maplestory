@@ -50,7 +50,6 @@ etc
     flex-direction: column;
     gap: 20px;
 }
-
 .dashboard__outer {
     display: flex;
     flex-direction: column;
@@ -117,19 +116,17 @@ header a .user-menu-icon { transition: all .15s linear; }
     border-radius: 0;
     transition: all .15s linear;
 }
-
 .menu-toggle .menu-toggle__btn--hovered { color: #07f; }
 .menu-toggle .menu-toggle__btn .menu-icon {
     display: inline-block;
     width: 18px;
     height: 16px;
     margin: 1px 11px 0 0;
-    zoom: 1;
     background: transparent url(https://rs.nxfs.nexon.com/gnb/images/set_gnb.png) 0 0 no-repeat;
     background-color: #17191d;
+    zoom: 1;
     transition: all .15s linear;
 }
-
 .menu-toggle .menu-toggle__btn--hovered .menu-icon {
     background-color: #07f;
     transition: all .2s linear;
@@ -167,7 +164,6 @@ header a .user-menu-icon { transition: all .15s linear; }
     gap: 8px;
     list-style: none;
 }
-
 .user-menu__item { padding-top: 2px; }
 
 /* Blocks : 넥슨 현대카드, 넥슨 피시방 찾기, 회원가입, 로그인 */
@@ -181,7 +177,6 @@ header a .user-menu-icon { transition: all .15s linear; }
     font: 14px NEXON Gothic;
     color: #17191d;
 }
-
 .hidden-name {
     position: absolute;
     top: 22px;
@@ -203,12 +198,10 @@ header a .user-menu-icon { transition: all .15s linear; }
     visibility: hidden;
     transition: .2s linear;
 }
-
 .hidden-name--hovered {
     opacity: 1;
     visibility: visible;
 }
-
 .user-menu-icon {
     width: 22px;
     height: 22px;
@@ -1090,7 +1083,7 @@ main { position: relative; }
     width: 100%;
     height: 1px;
     content: '';
-    background: linear-gradient(90deg, var(--noticelistLine) 85%, rgba(222, 225, 243, 0.00) 100%);
+    background: linear-gradient(90deg, var(--noticelistLine) 85%, rgba(222, 225, 243, .00) 100%);
 }
 .common-detail-button--update {
     justify-content: flex-start;
@@ -2066,7 +2059,7 @@ main { position: relative; }
     background: url(https://lwi.nexon.com/maplestory/home/state_new.png) center center no-repeat;
 }
 .job-info__tag-text {
-    border: 2px solid rgba(255, 255, 255, 0.30);
+    border: 2px solid rgba(255, 255, 255, .30);
     padding: 0 20px;
     height: 30px;
     box-sizing: border-box;
@@ -2159,7 +2152,7 @@ main { position: relative; }
     left: 50%;
     margin-left: -10.43%;
     transform: translateX(0px);
-    transition: transform .5s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: transform .5s cubic-bezier(.33, 1, .68, 1);
 }
 
 /* Block : 직업 썸네일 */
