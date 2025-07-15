@@ -333,3 +333,28 @@ jobThumbnailsSwiperSlides.forEach(slide => {
         slide.classList.remove('swiper-slide--job-hovered');
     });
 });
+
+//select-site hover 시,
+//select-site--hovered 클래스 추가
+const selectSite = document.querySelector('.select-site');
+
+selectSite.addEventListener('mouseenter', () => {
+    selectSite.classList.add('select-site--hovered');
+});
+selectSite.addEventListener('mouseleave', () => {
+    selectSite.classList.remove('select-site--hovered');
+});
+
+//sns-list__item hover 시,
+//sns-list__item--hovered 클래스 추가
+const snsListItems = document.querySelectorAll('.sns-list__item');
+
+snsListItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('sns-list__item--hovered');
+    });
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('sns-list__item--hovered');
+    });
+});
+
