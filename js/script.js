@@ -295,3 +295,15 @@ slideItemImgs.forEach(img => {
     });
 });
 
+//patch-item hover 시,
+//patch-item--hovered 클래스 추가
+const patchItems = document.querySelectorAll('.patch-item');
+
+patchItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('patch-item--hovered');
+    });
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('patch-item--hovered');
+    });
+});

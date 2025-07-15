@@ -6,7 +6,11 @@
       "Bash(git checkout:*)",
       "Bash(grep:*)",
       "Bash(sed:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(awk:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }

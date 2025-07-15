@@ -15,41 +15,36 @@
 	--btnCommonT3TextColor: #6D707F;
 	--btnCommonT3BgColor: #fff;
 	--btnCommonT3TextColor2: #6D707F;
-
 	--otherSectionColor: #EFF0F5;
 	--mainBannerRound: url('https://lwi.nexon.com/maplestory/home/banner_round.png');
-
 	--noticelistLine: rgba(222, 225, 243, .6);
 	--listLine: #DEE1F3;
 	--personalBannerBg: url('https://lwi.nexon.com/maplestory/home/banner_footRound.png');
 	--moreBtnImage: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%23969ABB'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A");
 	--moreBtnImageOver: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%2346495F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A");
-
 	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png');
 	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png');
-
 	--noticeListColorType_1 : #3B83E1;
 	--noticeListColorType_2 : #2F9461;
 	--noticeListColorType_4 : #E07948;
 	--noticeListColorType_5 : #5564A1;
 	--noticeListColorType_6 : #D64ADD;
 	--gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
-    --swiper-theme-color: #007aff;
-
-    /* 허중운 커스텀 상수*/
-    --header-height: 62px;
-    --main-max-width: 1696px;
-    --main-margin-x: 20px;
+	--swiper-theme-color: #007aff;
+	/* 허중운 커스텀 상수*/
+	--header-height: 62px;
+	--main-max-width: 1696px;
+	--main-margin-x: 20px;
 }
 
 html.index:root {
-    --gnbColor: #222;
-    /* --gnbHeight: 86px; */
-    --footerSelectText: #3D3F4C;
-    --footerSelectBg: #FFF;
-    --footerBolder: rgba(72, 75, 101, 0.30);
-    --footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo_bl.png);
-    --footerSnsColor: #A9ABBD;
+	--gnbColor: #222;
+	/* --gnbHeight: 86px; */
+	--footerSelectText: #3D3F4C;
+	--footerSelectBg: #FFF;
+	--footerBolder: rgba(72, 75, 101, 0.30);
+	--footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo_bl.png);
+	--footerSnsColor: #A9ABBD;
 }
 
 html.dark:root {
@@ -71,17 +66,13 @@ html.dark:root {
 	--btnCommonT3TextColor: #FDFDFF;
 	--btnCommonT3BgColor: #46474E;
 	--btnCommonT3TextColor2: #C0C4E0;
-
 	--otherSectionColor: #52535E;
 	--mainBannerRound: url('https://lwi.nexon.com/maplestory/home/banner_round_br.png');
-
 	--noticelistLine: rgba(98, 99, 106, .6);
 	--listLine: #62636A;
 	--personalBannerBg: url('https://lwi.nexon.com/maplestory/home/banner_footRound_br.png');
-
 	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br.png');
 	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br_on.png');
-
 	--noticeListColorType_1 : #A6EDFF;
 	--noticeListColorType_2 : #89E7B8;
 	--noticeListColorType_4 : #FFA467;
@@ -90,19 +81,17 @@ html.dark:root {
 }
 
 @font-face {
-    font-family: NEXON Gothic;
-    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot);
-    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.woff) format("woff");
-    font-weight: 400
+	font-family: NEXON Gothic;
+	font-weight: 400;
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot);
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.woff) format("woff");
 }
-
 @font-face {
-    font-family: NEXON Gothic Bold;
-    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot);
-    src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.woff) format("woff");
-    font-weight: 400
+	font-family: NEXON Gothic Bold;
+	font-weight: 400;
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot);
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.woff) format("woff");
 }
-
 @font-face {
 	font-family: 'PretendardVariable';
 	font-style: normal;
@@ -110,7 +99,6 @@ html.dark:root {
 	src: url(https://lwi.nexon.com/fonts/PretendardVariable.woff2) format('woff2'),
 		url(https://lwi.nexon.com/fonts/PretendardVariable.ttf) format('truetype');
 }
-
 @font-face {
 	font-family: 'PretendardVariable';
 	font-weight: 600;
@@ -119,271 +107,339 @@ html.dark:root {
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 0;
-    text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 0;
+	text-decoration: none;
 }
 
 html {
-    width: 100%;
+	width: 100%;
 	min-width: 1280px;
 	font-family: "PretendardVariable", "Malgun Gothic", sans-serif;
 	font-weight: 500;
 	color: var(--titleColor);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
-body {
-    background-color: var(--bgMainColor);
-}
+body { background-color: var(--bgMainColor); }
 
 a { color: inherit; }
 
 button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font: inherit;
-    color: inherit;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	color: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
 }
 
-img {
-    vertical-align: top;
-}
+img { vertical-align: top; }
 
 /* Block : 공용 스와이프 레이아웃 */
-.swiper {
-    height: 100%;
-}
+.swiper { height: 100%; }
+
 .swiper__wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: flex;
-    transition-property: transform;
-    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
-    box-sizing: content-box;
-    transform: translate3d(0px, 0, 0);
+	position: relative;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	box-sizing: content-box;
+	transition-property: transform;
+	transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+	transform: translate3d(0px, 0, 0);
 }
+
 .swiper__slide {
-    overflow: hidden;
-    flex-shrink: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition-property: transform;
-    display: block;
+	position: relative;
+	display: block;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition-property: transform;
 }
+
 .slide-item {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
+
 .slide-item__img {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
+
 .slide-item__info {
-    position: absolute;
-    color: #fff;
+	position: absolute;
+	color: #fff;
 }
+
 .slide-item__info__tag {
-    font-size: 15px;
-    padding: 3px 14px;
-    border: 2px solid #fff;
-    box-sizing: border-box;
-    border-radius: 15px;
-    display: inline-block;
-    font-weight: 500;
+	display: inline-block;
+	padding: 3px 14px;
+	font-size: 15px;
+	font-weight: 500;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	border-radius: 15px;
 }
+
 .slide-item__info__date {
-    font-weight: 500;
-    margin-top: 2px;
+	margin-top: 2px;
+	font-weight: 500;
 }
 
 /* Block : 공용 스와이프 네비게이션 */
 .swiper-navigation {
-    position: absolute;
-    z-index: 10;
+	position: absolute;
+	z-index: 10;
 }
-.swiper-navigation__outer {
-    display: flex;
-}
+
+.swiper-navigation__outer { display: flex; }
+
 .swiper-navigation__inner {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
+
 .swiper-navigation__prev,
 .swiper-navigation__next {
-    left: auto;
-    right: auto;
-    margin: 0;
-    top: 0;
-    font-size: 0;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    flex: 0 0 auto;
-    border-radius: 50% 0 0 50%;
-    overflow: hidden;
+	position: static;
+	top: 0;
+	left: auto;
+	right: auto;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	margin: 0;
+	font-size: 0;
+	color: var(--swiper-navigation-color, var(--swiper-theme-color));
+	border-radius: 50% 0 0 50%;
+	overflow: hidden;
+	cursor: pointer;
 }
+
 .swiper-navigation__prev::after,
 .swiper-navigation__next::after {
-    content: '';
-    display: block;
-    background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_on.png);
-    background-color: #6d707f;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity var(--transition-speed);
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_on.png);
+	background-color: #6d707f;
+	opacity: 0;
+	transition: opacity var(--transition-speed);
 }
+
 .swiper-navigation__prev--hovered::after,
-.swiper-navigation__next--hovered::after {
-    opacity: 1 !important;
-}
+.swiper-navigation__next--hovered::after { opacity: 1 !important; }
+
 .swiper-navigation__pagination {
-    position: relative;
-    font-size: 12px;
-    background-color: #fff;
-    height: 26px;
-    width: 44px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    font-weight: 700 !important;
-    color: #6D707F;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+	width: 44px;
+	height: 26px;
+	font-size: 12px;
+	font-weight: 700 !important;
+	color: #6D707F;
+	background-color: #fff;
 }
-.swiper-navigation__current {
-    color: #222;
-}
+
+.swiper-navigation__current { color: #222; }
+
 .swiper-navigation__next {
-    transform: rotateY(180deg);
-    right: 1px;
+	right: 1px;
+	transform: rotateY(180deg);
 }
 
 /* Block : 공용 모듈 제목 */
 .common-title {
-    margin-top: 7px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
+
 .common-title__text {
-    font-size: 22px;
-    color: var(--titleColor);
+	font-size: 22px;
+	color: var(--titleColor);
 }
+
+.common-title--white .common-title__text { color: #fff; }
+
 .common-title__icon {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background: var(--moreBtnImage) center center no-repeat;
-    position: relative;
+	position: relative;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: var(--moreBtnImage) center center no-repeat;
 }
+
 .common-title__icon::after {
-    content: '';
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background: var(--moreBtnImageOver) center center no-repeat;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity var(--transition-speed);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	background: var(--moreBtnImageOver) center center no-repeat;
+	opacity: 0;
+	transition: opacity var(--transition-speed);
 }
-.common-title__icon--hovered::after {
-    opacity: 1;
-}
+
+.common-title__icon--reverse { background-image: var(--moreBtnImageOver); }
+
+.common-title__icon--reverse::after { background-image: var(--moreBtnImage); }
+
+.common-title__icon--hovered::after { opacity: 1; }
 
 /* Block : 공용 디테일 버튼 */
 .common-detail-button {
-    display: flex;
-    gap: 3px;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
+	gap: 3px;
 }
+
 .common-detail-button__link {
-    padding: 5px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.50);
-    border-radius: 100px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    font-family: "PretendardVariable", "ë‹ì›€", sans-serif;
-    transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
+	display: inline-flex;
+	align-items: center;
+	padding: 5px 10px;
+	font-family: "PretendardVariable", "ë‹ì›€", sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.50);
+	border-radius: 100px;
+	transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
 }
+
 /* 공용 디테일 버튼 타입 */
 .common-detail-button__link--type3 {
-    font-size: 13px;
-    display: flex;
-    gap: 4px;
-    color: var(--btnCommonT3TextColor);
-    border: 2px solid #CDCFDB;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: var(--btnCommonT3BgColor);
+	display: flex;
+	gap: 4px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 13px;
+	color: var(--btnCommonT3TextColor);
+	background-color: var(--btnCommonT3BgColor);
+	border: 2px solid #CDCFDB;
 }
+
 .common-detail-button__link--type4 {
-    border: 0;
-    padding: 5px 15px 6px 20px;
-    background-color: #fff;
-    color: #00606C;
-    font-size: 14px;
-    font-weight: 700;
-    box-sizing: border-box;
-    min-width: 149px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    min-height: 34px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-width: 149px;
+	min-height: 34px;
+	padding: 5px 15px 6px 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight: 700;
+	color: #00606C;
+	background-color: #fff;
+	border: 0;
 }
+
+.common-detail-button__link--type5 {
+	display: flex;
+	gap: 4px;
+	font-size: 13px;
+	color: #6D707F;
+	background-color: #fff;
+}
+
+.common-detail-button__link--type6 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 162px;
+	min-height: 34px;
+	padding: 5px 15px 6px 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+}
+
 .common-detail-button--hovered .common-detail-button__link--type3 {
-    background-color: #CDCFDB;
-    color: #222;
+	color: #222;
+	background-color: #CDCFDB;
 }
-.common-detail-button--hovered .common-detail-button__link--type4 {
-    color: #222;
+
+.common-detail-button--hovered .common-detail-button__link--type4 { color: #222; }
+
+.common-detail-button--hovered .common-detail-button__link--type5 {
+	color: #222;
+	background-color: #fff;
 }
+
+.common-detail-button--hovered .common-detail-button__link--type6 {
+	color: #6C6E88;
+	background: #fff;
+}
+
+.common-detail-button__link--type6::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
+	transition: opacity var(--transition-speed);
+}
+
 .common-detail-button__link--type2::after,
 .common-detail-button__link--type3::after,
 .common-detail-button__link--type5::after,
-.common-detail-button__link--type7::after {
-    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png);
-}
+.common-detail-button__link--type7::after { content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png); }
+
 .common-detail-button--hovered .common-detail-button__link--type2::after,
 .common-detail-button--hovered .common-detail-button__link--type3::after,
 .common-detail-button--hovered .common-detail-button__link--type5::after,
-.common-detail-button--hovered .common-detail-button__link--type7::after {
-    content: url(https://lwi.nexon.com/maplestory/home/sm_arrow_on.png);
-}
+.common-detail-button--hovered .common-detail-button__link--type7::after { content: url(https://lwi.nexon.com/maplestory/home/sm_arrow_on.png); }
+
 .common-detail-button__link--type4::after {
-    content: '';
-    display: block;
-    width: 8px;
-    height: 13px;
-    background: url(https://lwi.nexon.com/maplestory/home/arrow_color.png) center center no-repeat;
+	content: '';
+	display: block;
+	width: 8px;
+	height: 13px;
+	background: url(https://lwi.nexon.com/maplestory/home/arrow_color.png) center center no-repeat;
 }
-.common-detail-button--hovered .common-detail-button__link--type4::after {
-    background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_on.png);
+
+.common-detail-button--hovered .common-detail-button__link--type4::after { background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_on.png); }
+
+.common-detail-button__link--type6::after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 13px;
+	background: url(https://lwi.nexon.com/maplestory/home/arrow_color_white.png) center center no-repeat;
 }
+
+.common-detail-button--hovered .common-detail-button__link--type6::after { background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_white_on.png); }

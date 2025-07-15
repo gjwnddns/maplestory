@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
-    <body style="height: 1000px">
+    <body>
         <header>
             <!-- Block : 메뉴 토글 -->
             <div class="menu-toggle">
@@ -19,7 +19,7 @@
                 </a>
             </div>
             <!-- Block : 넥슨 로고 -->
-            <img class="nexon-logo" src="https://rs.nxfs.nexon.com/gnb/images/logo_nexon.png" alt="NEXON" />
+            <img class="nexon-logo" src="https://rs.nxfs.nexon.com/gnb/images/logo_nexon.png" alt="NEXON">
             <!-- Block : 유저 인증 관련, 결제, pc방 서비스 리스트 -->
             <ul class="user-menu">
                 <li class="user-menu__item">
@@ -418,7 +418,7 @@
                                                 class="slide-item__img"
                                                 src="https://jarvis.dn.nexoncdn.co.kr/maplestory/gb/20250619/20250619002701331-439670142f6a4a7697788201fdd24fcd.png"
                                                 alt="태양에 도전하는 매화"
-                                            />
+                                            >
                                             <div class="slide-item__info slide-item__info--banner">
                                                 <div class="slide-item__info__inner">
                                                     <h3 class="slide-item__info__tag">렌 보스격파 이벤트</h3>
@@ -466,8 +466,8 @@
                     <div class="dashboard__outer">
                         <div class="dashboard__inner">
                             <div class="notice">
-                                <!-- Block : 공용 모듈듈 제목 -->
-                                <div class="common-title">
+                                <!-- Block : 공용 모듈 제목 + 공지사항 전용 타이틀 -->
+                                <div class="common-title common-title--notice">
                                     <h4 class="common-title__text">공지사항</h4>
                                     <a class="common-title__icon" href="#"></a>
                                 </div>
@@ -854,7 +854,7 @@
                                                                 </div>
                                                             </a>
                                                         </div>
-                                                    </div>  
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- Block : 네비게이션 기본 구조 + 스와이프 네비게이션 -->
@@ -885,17 +885,254 @@
                              </div>
                              <!-- Block : 테스트 월드 -->
                              <div class="test-world">
-                                <div class="test-world__inner">
+                                <div class="test-world__title">
+                                    <!-- Block : 공용 모듈 제목 + 테스트 월드 전용 타이틀 -->
+                                    <div class="common-title common-title--white">
+                                        <h4 class="common-title__text common-title__text--test-world">테스트 월드</h4>
+                                        <a class="common-title__icon common-title__icon--reverse" href="#"></a>
+                                    </div>
+                                    <div class="test-world__btn-list">
+                                        <ul>
+                                            <li>
+                                                <!-- Block : 공용 디테일 버튼 -->
+                                                <div class="common-detail-button">
+                                                    <a class="common-detail-button__link common-detail-button__link--type5" href="#">
+                                                        이용 신청
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <!-- Block : 공용 디테일 버튼 -->
+                                                <div class="common-detail-button">
+                                                    <a class="common-detail-button__link common-detail-button__link--type5" href="#">
+                                                        테스트 월드 보상
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="test-world__notice">
+                                    <!-- Block : 테스트월드 공지사항  -->
+                                    <div class="test-world-notice">
+                                        <div class="test-wrold-notice__content">
+                                            <p>테스트월드 운영 기간 입니다. <br>2025년 07월 10일(목) ~ 2025년 07월 17일(목)</p>
+                                            <!-- Block : 공용 디테일 버튼 + 테스트 월드 공지사항 전용 타입 6 -->
+                                            <div class="common-detail-button common-detail-button--test-world-notice">
+                                                <a class="common-detail-button__link common-detail-button__link--type6" href="#">
+                                                    바로가기
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="test-world__patch">
+                                    <!-- Block : 테스트 월드 패치 리스트 -->
+                                     <div class="test-world-patch-list">
+                                        <div class="test-world-patch__item">
+                                            <!-- Block : 테스트 월드 패치 아이템 -->
+                                             <a class="patch-item" href="#">
+                                                <h5>
+                                                    <span class="patch-item__category patch-item__category--patch">
+                                                        패치
+                                                    </span>
+                                                    <i class="patch-item__title">
+                                                        (수정) 클라이언트 1.2.191 릴리즈(어센트 스킬 수정 사항)
+                                                    </i>
+                                                </h5>
+                                             </a>
+                                        </div>
 
+                                        <div class="test-world-patch__item">
+                                            <!-- Block : 테스트 월드 패치 아이템 -->
+                                             <a class="patch-item" href="#">
+                                                <h5>
+                                                    <span class="patch-item__category patch-item__category--patch">
+                                                        패치
+                                                    </span>
+                                                    <i class="patch-item__title">
+                                                        (수정) 클라이언트 1.2.191 릴리즈(이벤트, 컨텐츠, 개선사항 및 오류 수정)
+                                                    </i>
+                                                </h5>
+                                             </a>
+                                        </div>
+
+                                        <div class="test-world-patch__item">
+                                            <!-- Block : 테스트 월드 패치 아이템 -->
+                                             <a class="patch-item" href="#">
+                                                <h5>
+                                                    <span class="patch-item__category patch-item__category--notice">
+                                                        공지
+                                                    </span>
+                                                    <i class="patch-item__title">
+                                                        [오픈] 테스트월드 운영기간 안내(2025.7.10~2025.7.17)
+                                                    </i>
+                                                </h5>
+                                             </a>
+                                        </div>
+                                     </div>
                                 </div>
                              </div>
                         </div>
                     </div>
                 </section>
                 <!-- Block : 정보 -->
-                <section class="info"> </section>
+                <section class="info">
+                    <div class="info__outer">
+                        <div class="info__inner">
+                            <!-- Block : 메이플 공식 앱 -->
+                            <div class="maplestory-app">
+                                <div class="maplestory-app__title">
+                                    <h4>
+                                        메이플스토리와 함께 이용해 보세요!
+                                    </h4>
+                                </div>
+                                <div class="maplestory-app__list">
+                                    <div class="maplestory-app__item">
+                                        <!-- Block : 메이플 공식 앱 개별 레이아웃-->
+                                         <div class="maplestory-app-info">
+                                            <div class="maplestory-app-info__img">
+                                                <img src="https://lwi.nexon.com/maplestory/home/icon_hands.png">
+                                            </div>
+                                            <div class="maplestory-app-info__content">
+                                                <h5 class="maplestory-app-info__title">
+                                                    메이플핸즈+
+                                                </h5>
+                                                <p class="maplestory-app-info__text">
+                                                    메이플스토리 공식 앱
+                                                    <br>언제 어디서나 내 캐릭터와 함께!
+                                                </p>
+                                                <!-- Block : 공용 디테일 버튼 + 메이플 공식 앱 버튼튼 -->
+                                                <div class="common-detail-button common-detail-button--maplestory-app">
+                                                    <a class="common-detail-button__link common-detail-button__link--type7" href="#">
+                                                        안드로이드
+                                                    </a>
+                                                    <a class="common-detail-button__link common-detail-button__link--type7" href="#">
+                                                        애플스토어
+                                                    </a>
+                                                </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="maplestory-app__item">
+                                        <!-- Block : 메이플 공식 앱 개별 레이아웃-->
+                                        <div class="maplestory-app-info">
+                                            <div class="maplestory-app-info__img">
+                                                <img src="https://lwi.nexon.com/maplestory/home/icon_nxplay.png">
+                                            </div>
+                                            <div class="maplestory-app-info__content">
+                                                <h5 class="maplestory-app-info__title">
+                                                    메이플핸즈+
+                                                </h5>
+                                                <p class="maplestory-app-info__text">
+                                                    메이플스토리 공식 앱
+                                                    <br>언제 어디서나 내 캐릭터와 함께!
+                                                </p>
+                                                <!-- Block : 공용 디테일 버튼 + 메이플 공식 앱 버튼튼 -->
+                                                <div class="common-detail-button common-detail-button--maplestory-app">
+                                                    <a class="common-detail-button__link common-detail-button__link--type7" href="#">
+                                                        안드로이드
+                                                    </a>
+                                                    <a class="common-detail-button__link common-detail-button__link--type7" href="#">
+                                                        애플스토어
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Block : 파트너스 -->
+                            <div class="partners">
+                                <div class="partners__outer">
+                                    <!-- Block : 공용 모듈 제목 -->
+                                    <div class="common-title">
+                                        <h4 class="common-title__text">
+                                            파트너스
+                                        </h4>
+                                    </div>
+                                    <div class="partners__slide">
+                                        <!-- Block : 스와이퍼 기본 구조 + 파트너스 스와이퍼 -->
+                                        <div class="swiper">
+                                            <div class="swiper__wrapper">
+                                                <div class="swiper__slide swiper__slide--partners">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Block : 공용 스와이프 네비게이션 + 파트너스 스와이프 네비게이션 -->
+                                        <div class="swiper-navigation">
+                                            <div class="swiper-navigation__outer">
+                                                <div class="swiper-navigation__inner"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Block : 메이플 사진 및 핑크빈 -->
+                            <div class="maplestory-pictures">
+                                <div class="maplestory-pictures__art">
+                                    <!-- Block : 메이플 사진 및 핑크빈 개별 레이아웃 -->
+                                     <div class="pictuer-box">
+                                        <!--Block : 공용 모듈 제목-->
+                                        <div class="common-title">
+                                            <h4 class="common-title__text">
+                                                아트웍
+                                            </h4>
+                                        </div>
+                                        <div class="picture-box__swiper">
+                                            <!-- Block : 스와이퍼 기본 구조 + 사진 스와이퍼 -->
+                                        </div>
+                                     </div>
+                                </div>
+                                <div class="maplestory-pictures__pinkbean">
+                                    <!-- Block : 메이플 사진 및 핑크빈 개별 레이아웃 -->
+                                    <div class="pictuer-box">
+                                        <!--Block : 공용 모듈 제목-->
+                                        <div class="common-title">
+                                            <h4 class="common-title__text">
+                                                pink_pinkbean
+                                            </h4>
+                                        </div>
+                                        <div class="picture-box__swiper">
+                                            <!-- Block : 스와이퍼 기본 구조 + 사진 스와이퍼 -->
+                                        </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Block : 직업 -->
-                <section class="job"> </section>
+                <section class="job">
+                    <div class="job__outer">
+                        <div class="job__inner">
+                            <!-- Block : 직업 탭 -->
+                            <div class="job-tab">
+                                <ul>
+                                    <li>
+                                        <button type="button">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                    <path d="M0.375 16.3917L0.923859 15.8429L2.38379 17.3027L1.83493 17.8516L0.375 16.3917ZM8.00766 11.8054C8.00766 10.9287 7.29642 10.2174 6.41963 10.2174C5.54283 10.2174 4.83163 10.9286 4.83163 11.8053C4.83163 12.6821 5.54251 13.3929 6.41968 13.3933C7.29685 13.3937 8.00805 12.6825 8.00766 11.8054ZM4.83908 11.9572L4.82448 11.9426L1.81876 14.9482L3.27871 16.4081L6.28444 13.4025L6.26782 13.3858C5.5119 13.3138 4.91078 12.7127 4.83908 11.9572ZM4.83163 11.8053C4.83163 10.983 5.45725 10.3065 6.25826 10.2255C5.41385 9.26568 4.66425 8.22194 4.02029 7.10651L2.00423 9.12245L4.83908 11.9572C4.83434 11.9072 4.83163 11.8566 4.83163 11.8053ZM7.9996 11.9673C7.91879 12.7684 7.24221 13.3937 6.41968 13.3933C6.36843 13.3933 6.31784 13.3906 6.26782 13.3858L9.10581 16.2238L11.1218 14.2079C10.0003 13.5603 8.9563 12.8092 7.9996 11.9673ZM14.6154 1.13801L6.97172 8.78148C7.08981 8.95534 7.16561 9.16834 7.16561 9.39253C7.16561 9.74008 6.99955 10.051 6.74321 10.2505C7.37042 10.3804 7.86207 10.8806 7.98015 11.512C8.17916 11.2478 8.49515 11.0758 8.84893 11.0758C9.07312 11.0758 9.27375 11.1393 9.44484 11.2545L17.0885 3.61114L17.625 0.601562L14.6154 1.13801ZM0.637648 15.5565L2.67125 17.5901L3.56595 16.6954L1.53235 14.6618L0.637648 15.5565Z" fill="currentColor"></path>
+                                                </svg>
+                                            </span>
+                                            전사
+                                        </button>
+                                    </li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <span></span>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="job__contents">
+
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="event-modal">
                 <div class="event-modal__inner">
@@ -928,6 +1165,11 @@
             </div>
         </main>
         <footer></footer>
+        <div class="top">
+            <button class="top__btn">
+
+            </button>
+        </div>
         <script src="js/commonScript.js"></script>
         <script src="js/script.js"></script>
     </body>

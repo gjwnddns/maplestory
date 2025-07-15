@@ -611,30 +611,32 @@ main { position: relative; }
     width: var(--main-max-width);
 }
 .slide-item__info--banner {
-    max-width: 1324px;
+    position: absolute;
+    top: 64px;
     left: 50%;
     transform: translateX(-50%);
-    top: 64px;
     width: 100%;
+    max-width: 1324px;
 }
 .slide-item__info__title--banner {
+    width: 476px;
+    height: 108px;
     margin-top: 7px;
     font-size: 50px;
-    max-width: 476px;
-    height: 108px;
-    line-height: 54px;
     font-weight: 600;
+    line-height: 54px;
     overflow: hidden;
 }
 .slide-item__info__date--banner { margin-top: 14px; }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 배너 네비게이션 */
 .swiper-navigation--banner {
-    max-width: 1324px;
+    position: absolute;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 40px;
     width: 100%;
+    max-width: 1324px;
 }
 .swiper-navigation__outer--banner {
     display: flex;
@@ -646,36 +648,36 @@ main { position: relative; }
 }
 .swiper-navigation__prev--banner,
 .swiper-navigation__next--banner {
+    position: relative;
     width: 26px;
     height: 26px;
     flex: 0 0 auto;
-    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
-    position: relative;
-    border-radius: 50% 0 0 50%;
     overflow: hidden;
+    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    border-radius: 50% 0 0 50%;
 }
 .banner__navigation__event-more {
-    font-size: 0;
+    position: relative;
     display: block;
     width: 26px;
     height: 26px;
-    background: url(https://lwi.nexon.com/maplestory/home/btn_eventMore.png);
-    position: relative;
-    border-radius: 50%;
     overflow: hidden;
+    font-size: 0;
+    background: url(https://lwi.nexon.com/maplestory/home/btn_eventMore.png);
+    border-radius: 50%;
 }
 .banner__navigation__event-more::after {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
     width: 100%;
     height: 100%;
+    font-size: 0;
     background: url(https://lwi.nexon.com/maplestory/home/btn_eventMore.png);
     background-position-y: -100%;
     background-color: #6d707f;
-    display: block;
-    position: absolute;
-    font-size: 0;
-    left: 0;
-    top: 0;
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
@@ -689,11 +691,11 @@ main { position: relative; }
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 100000000;
+    display: none;
     width: 100%;
     height: 442px;
     background-color: #474B6C;
-    z-index: 100000000;
-    display: none;
 }
 .event-modal--active { display: block; }
 .event-modal__inner {
@@ -707,16 +709,16 @@ main { position: relative; }
 }
 .event-modal__close {
     position: absolute;
-    right: -70px;
     top: 40px;
+    right: -70px;
     width: 50px;
     height: 50px;
+    margin-left: auto;
+    font-size: 0;
     background-image: url(https://lwi.nexon.com/maplestory/home/modal_close_type1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    font-size: 0;
-    margin-left: auto;
 }
 .event-modal__close--hovered { background-image: url(https://lwi.nexon.com/maplestory/home/modal_close_type1_on.png); }
 .event-modal__list {
@@ -733,20 +735,20 @@ main { position: relative; }
 }
 
 .event-item {
+    position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 842px;
+    height: 52px;
     padding: 0 16px;
     box-sizing: border-box;
-    height: 52px;
-    border-radius: 26px;
-    background-color: #2A2C3B;
-    color: #fff;
-    font-weight: 500;
-    justify-content: space-between;
     gap: 20px;
-    width: 842px;
-    position: relative;
     overflow: hidden;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2A2C3B;
+    border-radius: 26px;
     transition: color var(--transition-speed);
 }
 
@@ -754,49 +756,49 @@ main { position: relative; }
 
 .event-item::before {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
     background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
+    opacity: 0;
     transition: opacity var(--transition-speed);
 }
 
 .event-item--hovered::before { opacity: 1; }
 
 .event-item__title {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 18px;
     position: relative;
+    overflow: hidden;
+    font-size: 18px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .event-item__category {
-    font-style: normal;
     display: inline-flex;
-    padding: 0 14px;
     align-items: center;
     height: 28px;
-    border: 2px solid rgba(255, 255, 255, .3);
-    box-sizing: border-box;
-    border-radius: 14px;
+    padding: 0 14px;
     margin-right: 3px;
+    box-sizing: border-box;
+    font-style: normal;
     font-size: 14px;
     font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 14px;
     transition: border-color var(--transition-speed), color var(--transition-speed);
 }
 
 .event-item--hovered .event-item__category { border-color: rgba(34, 34, 34, 0.20); }
 
 .event-item__date {
+    position: relative;
     flex: 0 0 auto;
     font-size: 13px;
     color: #E1E4FF;
-    position: relative;
     transition: color var(--transition-speed);
 }
 
@@ -810,6 +812,9 @@ main { position: relative; }
     justify-content: space-between;
 }
 .dashboard__inner > div { flex: 1; }
+
+/* Block : 공용 모듈 제목 + 공지사항 전용 타이틀 */
+.common-title--notice { margin-top: 7px; }
 
 /* Block : 공지사항 */
 .notice { overflow: hidden; }
@@ -900,10 +905,10 @@ main { position: relative; }
 
 /* Block : 유저정보 및 게임 시작 */
 .personal-box {
-    max-width: 360px;
-    height: 390px;
     position: relative;
     z-index: 10;
+    width: 360px;
+    height: 390px;
 }
 .personal-box::before {
     content: url(https://lwi.nexon.com/maplestory/home/personalShadow.png);
@@ -913,26 +918,26 @@ main { position: relative; }
 }
 .personal-box__game-box {
     position: absolute;
-    width: 230px;
     top: -124px;
     left: 50%;
+    z-index: 100;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    width: 230px;
     padding: 5px;
     box-sizing: border-box;
     background-image: var(--personalBannerBg);
     background-position: center top;
     background-repeat: no-repeat;
-    z-index: 100;
 }
 .personal-box__game-box__game-start {
     display: block;
-    font-size: 0;
-    border-radius: 50%;
     width: 192px;
     height: 192px;
+    font-size: 0;
     background: url(https://lwi.nexon.com/maplestory/common/icon_gameStart_off.png);
+    border-radius: 50%;
 }
 .personal-box__game-box__download {
     position: absolute;
@@ -941,32 +946,32 @@ main { position: relative; }
     transform: translateX(-50%);
 }
 .personal-box__game-box__download-link {
+    position: relative;
     display: block;
     width: 134px;
     height: 47px;
     font-size: 0;
     background-image: url(https://lwi.nexon.com/maplestory/common/icon_gameDownload.png);
     background-repeat: no-repeat repeat;
-    position: relative;
 }
 .personal-box__inner {
     position: relative;
-    color: #fff;
     height: 100%;
-    border-radius: 30px;
     overflow: hidden;
+    color: #fff;
     background-color: #71748C;
+    border-radius: 30px;
 }
 .personal-box__inner::after {
     content: '';
-    width: 218px;
-    height: 218px;
-    display: block;
     position: absolute;
     top: -135px;
-    border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
+    display: block;
+    width: 218px;
+    height: 218px;
+    border-radius: 50%;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
 }
 
@@ -978,16 +983,16 @@ main { position: relative; }
 }
 .personal-default__title { font-size: 18px; }
 .personal-default__login {
-    font-size: 17px;
-    height: 48px;
     display: flex;
     justify-content: center;
-    background-color: #46495F;
     align-items: center;
-    border-radius: 6px;
+    height: 48px;
     margin-top: 10px;
     gap: 4px;
+    font-size: 17px;
     color: #fff;
+    background-color: #46495F;
+    border-radius: 6px;
     transition: background-color var(--transition-speed);
 }
 .personal-default__login--hovered {
@@ -1022,8 +1027,8 @@ main { position: relative; }
     display: inline-block;
     width: 6px;
     height: 6px;
-    border-radius: 50%;
     background-color: #DEE1F3;
+    border-radius: 50%;
     opacity: .5;
 }
 .personal-default__list__item-link {
@@ -1047,8 +1052,8 @@ main { position: relative; }
 /* Block : 주요 업데이트 정보 */
 .update-info__img {
     position: absolute;
-    right: -68px;
     top: -39px;
+    right: -68px;
 }
 .update-info__img img {
     width: 384px;
@@ -1056,12 +1061,12 @@ main { position: relative; }
     object-fit: cover;
 }
 .update-info__box {
-    margin-top: 11px;
-    margin-left: 30px;
-    width: 320px;
-    color: var(--textColor);
     position: relative;
     z-index: 10;
+    width: 320px;
+    margin-top: 11px;
+    margin-left: 30px;
+    color: var(--textColor);
 }
 .update-info__title {
     font-size: 21px;
@@ -1090,10 +1095,10 @@ main { position: relative; }
 }
 .update-info__text::before {
     content: '';
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     width: 100%;
     height: 1px;
     background: linear-gradient(90deg, var(--noticelistLine) 85%, rgba(222, 225, 243, 0.00) 100%);
@@ -1105,12 +1110,12 @@ main { position: relative; }
 
 /* Block : 게임 정보 */
 .board-box {
-    margin-top: 32px;
     position: relative;
+    margin-top: 32px;
 }
 .board-box__inner {
+    width: 617px;
     height: 188px;
-    max-width: 617px;
     overflow: hidden;
     border-radius: 30px;
 }
@@ -1131,10 +1136,10 @@ main { position: relative; }
     transform: translateX(0);
 }
 .slide-item__info--board {
-    transform: translateX(0);
-    max-width: initial;
-    left: 30px;
+    position: absolute;
     top: 25px;
+    left: 30px;
+    transform: translateX(0);
     width: 210px;
     margin: 0;
 }
@@ -1157,37 +1162,37 @@ main { position: relative; }
 
 /* Block : 스와이프 네비게이션 기본 구조 + 게임 정보 네비게이션 */
 .swiper-navigation--board {
-    left: 30px;
+    position: absolute;
     bottom: 25px;
-    max-width: initial;
-    width: auto;
+    left: 30px;
     transform: translateX(0);
+    width: auto;
 }
 .swiper-navigation__prev--board {
+    position: relative;
     width: 20px;
     height: 20px;
     background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtnSm.png) no-repeat center center;
-    position: relative;
 }
 .swiper-navigation__pagination--board {
     height: 20px;
     font-size: 10px;
 }
 .swiper-navigation__next--board {
+    position: relative;
     width: 20px;
     height: 20px;
     background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtnSm.png) no-repeat center center;
-    position: relative;
 }
 .swiper-navigation__prev--board::after,
 .swiper-navigation__next--board::after {
     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
     background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtnSm_on.png) no-repeat center center;
     background-color: #6d707f;
     opacity: 0;
@@ -1206,27 +1211,27 @@ main { position: relative; }
     gap: 27px;
 }
 .youtube__thumb-item {
-    flex: 1;
-    overflow: hidden;
     position: relative;
-    max-width: 260px;
+    flex: 1;
+    width: 260px;
+    overflow: hidden;
 }
 
 /* Block : 유튜브 썸네일 아이템 */
 .youtube-link__thumb {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
     text-align: center;
     border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 56.25%;
 }
 .youtube-link__thumb::before {
     content: url("data:image/svg+xml,%3Csvg width='40' height='41' viewBox='0 0 40 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.632812' width='39' height='39' rx='9.5' fill='url(%23paint0_linear_1845_15401)'/%3E%3Crect x='0.5' y='0.632812' width='39' height='39' rx='9.5' stroke='%23E47A45'/%3E%3Cpath d='M29 18.4008C30.3333 19.1706 30.3333 21.0951 29 21.8649L17 28.7931C15.6667 29.5629 14 28.6006 14 27.061L14 13.2046C14 11.665 15.6667 10.7028 17 11.4726L29 18.4008Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_1845_15401' x1='2.03046' y1='8.79948' x2='41.3437' y2='11.1686' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FF7733'/%3E%3Cstop offset='1' stop-color='%23FF9364'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
+    left: 50%;
     z-index: 10;
+    transform: translate(-50%, -50%) scale(1.2);
     opacity: 0;
     transition: all .4s cubic-bezier(0, 0.55, 0.45, 1);
 }
@@ -1283,22 +1288,22 @@ main { position: relative; }
 
 /* Block : 뉴스 container */
 .news-container {
+    position: relative;
     flex: 1;
-    max-width: 961px;
+    width: 961px;
     height: 318px;
+    overflow: hidden;
     background: url(https://lwi.nexon.com/maplestory/home/news_background.png) no-repeat right center;
     border-radius: 30px 0 0 30px;
-    overflow: hidden;
-    position: relative;
 }
 .news-container__title {
-    color: #0FF;
-    font-size: 20px;
-    font-weight: 500;
     position: absolute;
     top: 40px;
     left: 48px;
     z-index: 1;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0FF;
 }
 
 /* Block : 뉴스 스와이퍼 */
@@ -1345,12 +1350,12 @@ main { position: relative; }
     box-sizing: border-box;
 }
 .slide-item__right--news {
-    transform: rotate(0deg);
     margin-top: 9px;
     margin-right: 30px;
-    border-radius: 10px;
     overflow: hidden;
+    transform: rotate(0deg);
     transform-origin: center bottom;
+    border-radius: 10px;
     transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
 }
 .slide-item__right-img--news {
@@ -1397,8 +1402,8 @@ main { position: relative; }
 
 /* Block : 메이플 스토어 */
 .maple-store {
-    width: 684px;
     position: relative;
+    width: 684px;
 }
 @media (max-width: 1535px) {
     .maple-store { width: 447px; }
@@ -1456,14 +1461,13 @@ main { position: relative; }
 }
 .swiper-navigation__prev--store,
 .swiper-navigation__next--store {
+    position: relative;
     width: 26px;
     height: 26px;
     flex: 0 0 auto;
-    background-image: var(--slideNavArrow);
-    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
-    position: relative;
-    border-radius: 50% 0 0 50%;
     overflow: hidden;
+    background: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn.png) no-repeat center center;
+    border-radius: 50% 0 0 50%;
 }
 .swiper-navigation__prev--store::after,
 .swiper-navigation__next--store::after {
@@ -1477,9 +1481,132 @@ main { position: relative; }
 .swiper-navigation__current--store { color: var(--titleColor); }
 .swiper-navigation__total--store { color: var(--btnCommonT3TextColor2); }
 .swiper-navigation__next--store {
-    transform: rotateY(180deg);
     right: 1px;
+    transform: rotateY(180deg);
 }
 
+/* Block : 테스트 월드 */
+.test-world {
+    margin-top: 70px;
+    height: 176px;
+    background-color: #6C76C3;
+    border-radius: 30px;
+    padding: 0 50px;
+    display: flex;
+}
+.test-world__title {
+    position: relative;
+    width: 188px;
+    margin-top: 30px;
+}
+.test-world__notice {
+    width: 723px;
+    min-width: 494px;
+    display: flex;
+    align-items: center;
+}
+.test-world__patch {
+    padding-left: 56px;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.test-world__btn-list {
+    position: absolute;
+    bottom: 26px;
+}
+.test-world__btn-list  > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
 
+/* Block : 공용 모듈 제목 + 테스트 월드 전용 타이틀 */
+.common-title__text--test-world {
+    font-size: 23px;
+    font-weight: 500;
+}
 
+/* Block : 테스트 월드 공지사항 */
+.test-world-notice {
+    height: 142px;
+    width: 100%;
+    background-color: #474B6C;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D7DBFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Block : 공용 디테일 버튼 + 테스트 월드 공지사항 전용 타입 6 버튼 */
+.common-detail-button--test-world-notice {
+    position: relative;
+    z-index: 0;
+    margin-top: 10px;
+}
+
+/* Block : 테스트 월드 패치 리스트 */
+.test-world-patch-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.test-world-patch__item {
+    height: auto;
+    padding: 0;
+    border-top: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Block : 테스트 월드 패치 아이템 */
+.patch-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+.patch-item h5 {
+    color: #fff;
+    display: flex;
+    gap: 6px;
+}
+.patch-item__category {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 24px;
+    padding: 0 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    border-radius: 12px;
+}
+.patch-item__category--patch { background-color: #FFACF8; }
+.patch-item__category--notice {
+    background-color: #42497D;
+    color: #fff;
+}
+.patch-item__title {
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    position: relative;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.patch-item--hovered .patch-item__title {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
