@@ -383,8 +383,22 @@ img { vertical-align: top; }
 	border: 0;
 	overflow: hidden;
 }
-
-.common-detail-button--hovered .common-detail-button__link--type3 {
+.common-detail-button__link--type7 {
+    font-size: 13px;
+    display: flex;
+    min-width: 143px;
+    justify-content: center;
+    gap: 4px;
+    padding: 0;
+    min-height: 35px;
+    color: #6d707f;
+    border: 2px solid #CDCFDB;
+    background-color: #fff;
+    align-items: center;
+    box-sizing: border-box;
+}
+.common-detail-button--hovered .common-detail-button__link--type3,
+.common-detail-button--hovered .common-detail-button__link--type7 {
 	color: #222;
 	background-color: #CDCFDB;
 }
@@ -412,6 +426,22 @@ img { vertical-align: top; }
 	height: 100%;
 	background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
 	transition: opacity var(--transition-speed);
+}
+
+.common-detail-button__link--android::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(https://lwi.nexon.com/maplestory/home/icon_android.png) center center no-repeat;
+}
+
+.common-detail-button__link--apple::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(https://lwi.nexon.com/maplestory/home/icon_apple.png) center center no-repeat;
 }
 
 .common-detail-button__link--type2::after,

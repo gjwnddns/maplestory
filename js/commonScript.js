@@ -47,4 +47,28 @@ commonDetailButtons.forEach(button => {
     });
 });
 
+//slide-item hover 시,
+//slide-item--hovered 클래스 추가
+const slideItems = document.querySelectorAll('.slide-item');
 
+slideItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('slide-item--hovered');
+    });
+    item.addEventListener('mouseleave', () => {
+        item.classList.remove('slide-item--hovered');
+    });
+});
+
+//slide-item__sns-modal__link--web 시,
+//slide-item__sns-modal__link--web--hovered 클래스 추가
+const slideItemSnsModalLinks = document.querySelectorAll('.slide-item__sns-modal__link--web');
+
+slideItemSnsModalLinks.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.classList.add('slide-item__sns-modal__link--web--hovered');
+    });
+    link.addEventListener('mouseleave', () => {
+        link.classList.remove('slide-item__sns-modal__link--web--hovered');
+    });
+});

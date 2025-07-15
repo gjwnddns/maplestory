@@ -68,6 +68,8 @@ etc
     flex-direction: column;
     gap: 20px;
 } */
+ /* 소수점표시에서 숫자가 1보다 낮을 경우 정수 제거하고 소수점부터 표시*/
+ /* ex) 0.28 -> .28*/
 
 /* Block : Header */
 header {
@@ -1609,4 +1611,345 @@ main { position: relative; }
 .patch-item--hovered .patch-item__title {
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+
+/* Block : 정보 영역 */
+.info {
+    background-color: var(--otherSectionColor);
+}
+.info__inner {
+    padding: 70px 0;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.info__inner > div {
+    border-radius: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    flex: 1;
+    height: 390px;
+    overflow: hidden;
+}
+.info .common-title {
+    gap: 4px;
+}
+
+/* Block : 메이플 공식 앱 */
+.maplestory-app {
+    padding: 40px 30px 40px 48px;
+    display: flex;
+    max-width: 823px;
+    min-width: 639px;
+    box-sizing: border-box;
+}
+.maplestory-app__title {
+    color: #454757;
+    font-size: 25px;
+    flex: 1;
+    max-width: 240px;
+    min-width: 152px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    border-right: 1px solid #DEE1F3;
+}
+.maplestory-app__title-text {
+    word-break: keep-all;
+}
+.maplestory-app__list {
+    flex: 1;
+    margin-left: 40px;
+    box-sizing: border-box;
+    min-width: 407px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+.maplestory-app-info__buttons {
+    display: flex;
+    margin-top: 15px;
+    gap: 4px;
+    justify-content: flex-start;
+}
+
+/* Block : 메이플 공식 앱 개별 레이아웃 */
+.maplestory-app-info {
+    display: flex;
+    gap: 26px;
+}
+.maplestory-app-info__img {
+    display: flex;
+    align-items: center;
+}
+.maplestory-app-info__img img {
+    width: 126px;
+    height: 126px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+.maplestory-app-info__title {
+    font-size: 22px;
+    color: #454757;
+    line-height: 26px;
+}
+.maplestory-app-info__text {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #3D3F4C;
+    line-height: 19px;
+    min-height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* Block : 파트너스 */
+.partners {
+    max-width: 386px;
+    min-width: 276px;
+    box-sizing: border-box;
+    position: relative;
+}
+.partners__outer {
+    height: 100%;
+}
+.partners__slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Block : 공용 모듈 제목 + 파트너스 전용 타이틀 */
+.common-title--partners {
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    z-index: 10;
+}
+.common-title__text--partners {
+    font-size: 19px;
+    color: #454757;
+}
+
+/* Block : 파트너스 스와이프 아이템 */
+.slide-item--partners {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slide-item__logo--partners {
+    margin-top: 50px;
+}
+.slide-item__logo--partners img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.slide-item__title--partners {
+    font-size: 0;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    max-width: 100%;
+}
+.slide-item__title-text--partners {
+    font-size: 19px;
+    vertical-align: middle;
+    color: #454757;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slide-item__tag-list--partners {
+    margin-top: 21px;
+    width: 100%;
+}
+.slide-item__tag-list--partners ul {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 67px;
+    overflow: hidden;
+}
+.slide-item__tag-list--partners ul li {
+    display: flex;
+    height: 31px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #E9EAEE;
+    color: #484B65;
+    font-size: 16px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.slide-item__tag-list--partners ul li > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slide-item__sns-modal {
+    position: absolute;
+    top: 46px;
+    left: 10px;
+    right: 10px;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+.slide-item--hovered .slide-item__sns-modal {
+    opacity: 1;
+}
+.slide-item__sns-modal__inner {
+    background-color: rgba(255, 255, 255, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.slide-item__sns-modal__inner > ul {
+    display: flex;
+    gap: 8px;
+}
+.slide-item__sns-modal__link--partners a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slide-item__sns-modal__link--partners a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+.slide-item__sns-modal__link--web a {
+    background-image: url(https://lwi.nexon.com/maplestory/home/icon_link_1.png);
+}
+.slide-item__sns-modal__link--web a::after {
+    background-image: url(https://lwi.nexon.com/maplestory/home/icon_link_1_on.png);
+}
+.slide-item__sns-modal__link--web--hovered a::after {
+    opacity: 1;
+}
+
+/* Block : 공용 스와이프 네비게이션 + 파트너스 스와이프 네비게이션 */
+.swiper-navigation--partners {
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.swiper-navigation__prev--partners,
+.swiper-navigation__next--partners {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png);
+    border-radius: 50% 0 0 50%;
+}
+.swiper-navigation__prev--partners::after,
+.swiper-navigation__next--partners::after {
+    content: '';
+    display: block;
+    background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png);
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+/* Block : 메이플 사진 및 핑크빈 */
+.maplestory-pictures {
+    max-width: 386px;
+    min-width: 265px;
+    box-sizing: border-box;
+    background: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.maplestory-pictures > div {
+    background-color: #fff;
+    border-radius: 30px;
+    height: 170px;
+    position: relative;
+}
+
+/* 공용 모듈 제목 + 메이플 사진 및 핑크빈 전용 타이틀 */
+.common-title--pictures {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+.common-title__text--pictures {
+    font-size: 19px;
+    color: #454757;
+}
+
+/* Block : 스와이퍼 기본 구조 + 사진 스와이퍼 */
+.swiper--pictures {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.swiper__slide-pictures {
+    height: 100%;
+}
+.swiper__slide-pictures > a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Block : 공용 스와이프 네비게이션 + 메이플 사진 및 핑크빈 스와이프 네비게이션 */
+.swiper-navigation--pictures {
+    position: absolute;
+    left: 14px;
+    bottom: 11px;
+}
+.swiper-navigation__prev--pictures,
+.swiper-navigation__next--pictures {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png);
+    border-radius: 50% 0 0 50%;
+}
+.swiper-navigation__prev--pictures::after,
+.swiper-navigation__next--pictures::after {
+    content: '';
+    display: block;
+    background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png);
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity var(--transition-speed);
 }
