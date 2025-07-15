@@ -1,11 +1,11 @@
 /* 전체 사이트 공통 스타일 */
 :root {
 	--gnbHeight: 86px;
-	--gnbFixedTopBg : #525572;
-	--darkOnOffBg : #E9EAF0;
-	--btnLight : #71748C;
+	--gnbFixedTopBg: #525572;
+	--darkOnOffBg: #E9EAF0;
+	--btnLight: #71748C;
 	--gnbAnimSpeed: .3s;
-	--gnbFixedBg : rgba(70, 73, 95, .98);
+	--gnbFixedBg: rgba(70, 73, 95, .98);
 	--transition-speed3s: .3s;
 	--transition-speed: .4s;
 	--titleColor: #454757;
@@ -24,12 +24,12 @@
 	--moreBtnImageOver: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='11' cy='11' r='11' fill='%2346495F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17 11C17 11.5523 16.5523 12 16 12H6C5.44772 12 5 11.5523 5 11C5 10.4477 5.44772 10 6 10H16C16.5523 10 17 10.4477 17 11Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 17C10.4477 17 10 16.5523 10 16V6C10 5.44772 10.4477 5 11 5C11.5523 5 12 5.44772 12 6V16C12 16.5523 11.5523 17 11 17Z' fill='white'/%3E%3C/svg%3E%0A");
 	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans.png');
 	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_on.png');
-	--noticeListColorType_1 : #3B83E1;
-	--noticeListColorType_2 : #2F9461;
-	--noticeListColorType_4 : #E07948;
-	--noticeListColorType_5 : #5564A1;
-	--noticeListColorType_6 : #D64ADD;
-	--gnbEaseing: cubic-bezier(0.85, 0, 0.15, 1);
+	--noticeListColorType_1: #3B83E1;
+	--noticeListColorType_2: #2F9461;
+	--noticeListColorType_4: #E07948;
+	--noticeListColorType_5: #5564A1;
+	--noticeListColorType_6: #D64ADD;
+	--gnbEaseing: cubic-bezier(.85, 0, .15, 1);
 	--swiper-theme-color: #007aff;
 	/* 허중운 커스텀 상수*/
 	--header-height: 62px;
@@ -42,22 +42,22 @@ html.index:root {
 	/* --gnbHeight: 86px; */
 	--footerSelectText: #3D3F4C;
 	--footerSelectBg: #FFF;
-	--footerBolder: rgba(72, 75, 101, 0.30);
+	--footerBolder: rgba(72, 75, 101, .30);
 	--footerLogo: url(https://lwi.nexon.com/maplestory/common/footer_logo_bl.png);
 	--footerSnsColor: #A9ABBD;
 }
 
 html.dark:root {
 	--gnbColor: #F7F7F7;
-	/* --gnbFixedBg : #32333B; */
-	--darkOnOffBg : #252629;
-	--btnLight : transparent;
-	--btnDark : #E9EAF0;
-	--footerSelectText : #FDFDFF;
-	--footerSelectBg : #46474E;
-	--footerBolder : rgba(184, 187, 218, 0.30);
-	--footerLogo : url('https://lwi.nexon.com/maplestory/common/footer_logo.png');
-	--footerSnsColor : #C6C6C6;
+	/* --gnbFixedBg: #32333B; */
+	--darkOnOffBg: #252629;
+	--btnLight: transparent;
+	--btnDark: #E9EAF0;
+	--footerSelectText: #FDFDFF;
+	--footerSelectBg: #46474E;
+	--footerBolder: rgba(184, 187, 218, .30);
+	--footerLogo: url('https://lwi.nexon.com/maplestory/common/footer_logo.png');
+	--footerSnsColor: #C6C6C6;
 	--gnbHeight: 86px;
 	--titleColor: #F0F2FF;
 	--textColor: #FDFDFF;
@@ -73,32 +73,34 @@ html.dark:root {
 	--personalBannerBg: url('https://lwi.nexon.com/maplestory/home/banner_footRound_br.png');
 	--slideNavArrow: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br.png');
 	--slideNavArrowOn: url('https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_trans_br_on.png');
-	--noticeListColorType_1 : #A6EDFF;
-	--noticeListColorType_2 : #89E7B8;
-	--noticeListColorType_4 : #FFA467;
-	--noticeListColorType_5 : #ABBCFF;
-	--noticeListColorType_6 : #FA8FFF;
+	--noticeListColorType_1: #A6EDFF;
+	--noticeListColorType_2: #89E7B8;
+	--noticeListColorType_4: #FFA467;
+	--noticeListColorType_5: #ABBCFF;
+	--noticeListColorType_6: #FA8FFF;
 }
 
 @font-face {
 	font-family: NEXON Gothic;
 	font-weight: 400;
 	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot);
-	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.woff) format("woff");
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.eot#iefix) format("embedded-opentype"), url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF.woff) format("woff");
 }
+
 @font-face {
 	font-family: NEXON Gothic Bold;
 	font-weight: 400;
 	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot);
-	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot#iefix) format("embedded-opentype"),url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.woff) format("woff");
+	src: url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.eot#iefix) format("embedded-opentype"), url(https://rs.nxfs.nexon.com/gnb/fonts/NEXON%20Lv1%20Gothic%20Low%20OTF%20Bold.woff) format("woff");
 }
+
 @font-face {
 	font-family: 'PretendardVariable';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://lwi.nexon.com/fonts/PretendardVariable.woff2) format('woff2'),
-		url(https://lwi.nexon.com/fonts/PretendardVariable.ttf) format('truetype');
+	src: url(https://lwi.nexon.com/fonts/PretendardVariable.woff2) format('woff2'), url(https://lwi.nexon.com/fonts/PretendardVariable.ttf) format('truetype');
 }
+
 @font-face {
 	font-family: 'PretendardVariable';
 	font-weight: 600;
@@ -110,8 +112,8 @@ html.dark:root {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	border: 0;
 	text-decoration: none;
+	border: 0;
 }
 
 html {
@@ -144,7 +146,6 @@ img { vertical-align: top; }
 
 /* Block : 공용 스와이프 레이아웃 */
 .swiper { height: 100%; }
-
 .swiper__wrapper {
 	position: relative;
 	z-index: 1;
@@ -152,11 +153,10 @@ img { vertical-align: top; }
 	width: 100%;
 	height: 100%;
 	box-sizing: content-box;
+	transform: translate3d(0px, 0, 0);
 	transition-property: transform;
 	transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
-	transform: translate3d(0px, 0, 0);
 }
-
 .swiper__slide {
 	position: relative;
 	display: block;
@@ -174,29 +174,25 @@ img { vertical-align: top; }
 	height: 100%;
 	overflow: hidden;
 }
-
 .slide-item__img {
 	position: absolute;
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
 }
-
 .slide-item__info {
 	position: absolute;
 	color: #fff;
 }
-
 .slide-item__info__tag {
 	display: inline-block;
 	padding: 3px 14px;
+	box-sizing: border-box;
 	font-size: 15px;
 	font-weight: 500;
-	box-sizing: border-box;
 	border: 2px solid #fff;
 	border-radius: 15px;
 }
-
 .slide-item__info__date {
 	margin-top: 2px;
 	font-weight: 500;
@@ -207,20 +203,17 @@ img { vertical-align: top; }
 	position: absolute;
 	z-index: 10;
 }
-
 .swiper-navigation__outer { display: flex; }
-
 .swiper-navigation__inner {
 	display: flex;
 	align-items: center;
 }
-
 .swiper-navigation__prev,
 .swiper-navigation__next {
 	position: static;
 	top: 0;
-	left: auto;
 	right: auto;
+	left: auto;
 	z-index: 10;
 	display: flex;
 	align-items: center;
@@ -233,7 +226,6 @@ img { vertical-align: top; }
 	overflow: hidden;
 	cursor: pointer;
 }
-
 .swiper-navigation__prev::after,
 .swiper-navigation__next::after {
 	content: '';
@@ -241,15 +233,13 @@ img { vertical-align: top; }
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_on.png);
 	background-color: #6d707f;
+	background-image: url(https://lwi.nexon.com/maplestory/home/bannerSwiperBtn_on.png);
 	opacity: 0;
 	transition: opacity var(--transition-speed);
 }
-
 .swiper-navigation__prev--hovered::after,
 .swiper-navigation__next--hovered::after { opacity: 1 !important; }
-
 .swiper-navigation__pagination {
 	position: relative;
 	display: flex;
@@ -263,9 +253,7 @@ img { vertical-align: top; }
 	color: #6D707F;
 	background-color: #fff;
 }
-
 .swiper-navigation__current { color: #222; }
-
 .swiper-navigation__next {
 	right: 1px;
 	transform: rotateY(180deg);
@@ -277,14 +265,11 @@ img { vertical-align: top; }
 	align-items: center;
 	gap: 8px;
 }
-
 .common-title__text {
 	font-size: 22px;
 	color: var(--titleColor);
 }
-
 .common-title--white .common-title__text { color: #fff; }
-
 .common-title__icon {
 	position: relative;
 	display: inline-block;
@@ -292,7 +277,6 @@ img { vertical-align: top; }
 	height: 22px;
 	background: var(--moreBtnImage) center center no-repeat;
 }
-
 .common-title__icon::after {
 	content: '';
 	position: absolute;
@@ -305,11 +289,8 @@ img { vertical-align: top; }
 	opacity: 0;
 	transition: opacity var(--transition-speed);
 }
-
 .common-title__icon--reverse { background-image: var(--moreBtnImageOver); }
-
 .common-title__icon--reverse::after { background-image: var(--moreBtnImage); }
-
 .common-title__icon--hovered::after { opacity: 1; }
 
 /* Block : 공용 디테일 버튼 */
@@ -318,7 +299,6 @@ img { vertical-align: top; }
 	justify-content: center;
 	gap: 3px;
 }
-
 .common-detail-button__link {
 	display: inline-flex;
 	align-items: center;
@@ -327,11 +307,10 @@ img { vertical-align: top; }
 	font-size: 12px;
 	font-weight: 700;
 	color: #fff;
-	border: 1px solid rgba(255, 255, 255, 0.50);
+	border: 1px solid rgba(255, 255, 255, .50);
 	border-radius: 100px;
 	transition: background-color var(--transition-speed3s), color var(--transition-speed3s);
 }
-
 /* 공용 디테일 버튼 타입 */
 .common-detail-button__link--type3 {
 	display: flex;
@@ -343,7 +322,6 @@ img { vertical-align: top; }
 	background-color: var(--btnCommonT3BgColor);
 	border: 2px solid #CDCFDB;
 }
-
 .common-detail-button__link--type4 {
 	display: flex;
 	align-items: center;
@@ -358,7 +336,6 @@ img { vertical-align: top; }
 	background-color: #fff;
 	border: 0;
 }
-
 .common-detail-button__link--type5 {
 	display: flex;
 	gap: 4px;
@@ -366,7 +343,6 @@ img { vertical-align: top; }
 	color: #6D707F;
 	background-color: #fff;
 }
-
 .common-detail-button__link--type6 {
 	position: relative;
 	display: flex;
@@ -384,37 +360,33 @@ img { vertical-align: top; }
 	overflow: hidden;
 }
 .common-detail-button__link--type7 {
-    font-size: 13px;
-    display: flex;
-    min-width: 143px;
-    justify-content: center;
-    gap: 4px;
-    padding: 0;
-    min-height: 35px;
-    color: #6d707f;
-    border: 2px solid #CDCFDB;
-    background-color: #fff;
-    align-items: center;
-    box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	min-width: 143px;
+	min-height: 35px;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 13px;
+	color: #6d707f;
+	background-color: #fff;
+	border: 2px solid #CDCFDB;
 }
 .common-detail-button--hovered .common-detail-button__link--type3,
 .common-detail-button--hovered .common-detail-button__link--type7 {
 	color: #222;
 	background-color: #CDCFDB;
 }
-
 .common-detail-button--hovered .common-detail-button__link--type4 { color: #222; }
-
 .common-detail-button--hovered .common-detail-button__link--type5 {
 	color: #222;
 	background-color: #fff;
 }
-
 .common-detail-button--hovered .common-detail-button__link--type6 {
 	color: #6C6E88;
 	background: #fff;
 }
-
 .common-detail-button__link--type6::before {
 	content: '';
 	position: absolute;
@@ -427,33 +399,28 @@ img { vertical-align: top; }
 	background: linear-gradient(93deg, #F73 6.02%, #FF9364 99.05%);
 	transition: opacity var(--transition-speed);
 }
-
 .common-detail-button__link--android::before {
-    content: '';
-    display: block;
-    width: 23px;
-    height: 23px;
-    background: url(https://lwi.nexon.com/maplestory/home/icon_android.png) center center no-repeat;
+	content: '';
+	display: block;
+	width: 23px;
+	height: 23px;
+	background: url(https://lwi.nexon.com/maplestory/home/icon_android.png) center center no-repeat;
 }
-
 .common-detail-button__link--apple::before {
-    content: '';
-    display: block;
-    width: 23px;
-    height: 23px;
-    background: url(https://lwi.nexon.com/maplestory/home/icon_apple.png) center center no-repeat;
+	content: '';
+	display: block;
+	width: 23px;
+	height: 23px;
+	background: url(https://lwi.nexon.com/maplestory/home/icon_apple.png) center center no-repeat;
 }
-
 .common-detail-button__link--type2::after,
 .common-detail-button__link--type3::after,
 .common-detail-button__link--type5::after,
 .common-detail-button__link--type7::after { content: url(https://lwi.nexon.com/maplestory/home/sm_arrow.png); }
-
 .common-detail-button--hovered .common-detail-button__link--type2::after,
 .common-detail-button--hovered .common-detail-button__link--type3::after,
 .common-detail-button--hovered .common-detail-button__link--type5::after,
 .common-detail-button--hovered .common-detail-button__link--type7::after { content: url(https://lwi.nexon.com/maplestory/home/sm_arrow_on.png); }
-
 .common-detail-button__link--type4::after {
 	content: '';
 	display: block;
@@ -461,9 +428,7 @@ img { vertical-align: top; }
 	height: 13px;
 	background: url(https://lwi.nexon.com/maplestory/home/arrow_color.png) center center no-repeat;
 }
-
 .common-detail-button--hovered .common-detail-button__link--type4::after { background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_on.png); }
-
 .common-detail-button__link--type6::after {
 	content: '';
 	display: block;
@@ -471,5 +436,4 @@ img { vertical-align: top; }
 	height: 13px;
 	background: url(https://lwi.nexon.com/maplestory/home/arrow_color_white.png) center center no-repeat;
 }
-
 .common-detail-button--hovered .common-detail-button__link--type6::after { background-image: url(https://lwi.nexon.com/maplestory/home/arrow_color_white_on.png); }
