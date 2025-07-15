@@ -670,6 +670,7 @@ main { position: relative; }
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
+.banner__navigation__event-more--hovered::after { opacity: 1; }
 
 /* ========================================
    Event Modal
@@ -2489,4 +2490,28 @@ footer a {
     width: 91px;
     height: 27px;
     background-image: var(--footerLogo);
+}
+
+/* Block : 맨위로 버튼 */
+.top {
+    height: 0;
+    position: sticky;
+    bottom: 0px;
+    right: 0;
+    display: block;
+    width: 100%;
+    min-width: 1280px;
+    margin: 0 auto;
+    opacity: 1;
+    z-index: 100;
+    transition: opacity .3s ease-in-out, z-index .3s ease-in-out;
+}
+.top__btn {
+    z-index: 1000;
+    position: absolute;
+    right: 24px;
+    top: -72px;
+    width: 48px;
+    height: 48px;
+    background: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='48' height='48' rx='5' fill='white' fill-opacity='0.1'/%3E%3Crect x='0.5' y='0.5' width='47' height='47' rx='4.5' stroke='%23676B8B' stroke-opacity='0.2'/%3E%3Cpath d='M24.7071 13.2929C24.3166 12.9024 23.6834 12.9024 23.2929 13.2929L16.9289 19.6569C16.5384 20.0474 16.5384 20.6805 16.9289 21.0711C17.3195 21.4616 17.9526 21.4616 18.3431 21.0711L24 15.4142L29.6569 21.0711C30.0474 21.4616 30.6805 21.4616 31.0711 21.0711C31.4616 20.6805 31.4616 20.0474 31.0711 19.6569L24.7071 13.2929ZM24 34L25 34L25 14L24 14L23 14L23 34L24 34Z' fill='%23B0B3CB'/%3E%3C/svg%3E%0A");    
 }

@@ -192,9 +192,19 @@ loginBtn.addEventListener('mouseleave', () => {
     loginBtn.classList.remove('btn-login-nav-sticky__game-start--hovered');
 });
 
+//banner__navigation__event-more hover 시,
+//banner__navigation__event-more--hovered 클래스 추가
+const eventMore = document.querySelector('.banner__navigation__event-more');
+eventMore.addEventListener('mouseenter', () => {
+    eventMore.classList.add('banner__navigation__event-more--hovered');
+});
+
+eventMore.addEventListener('mouseleave', () => {
+    eventMore.classList.remove('banner__navigation__event-more--hovered');
+});
+
 //banner__navigation__event-more 클릭시,
 //event-modal--active 클래스 제거, 추가가
-const eventMore = document.querySelector('.banner__navigation__event-more');
 const eventModal = document.querySelector('.event-modal');
 const eventModalClose = document.querySelector('.event-modal__close');
 
